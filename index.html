@@ -1,0 +1,2185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAYCON 2026 | Pan-African Youth Conference - The Africa We Want, The Future We Lead</title>
+    <meta name="description" content="Pan African Youth Conference 2026 - 2–4 September 2026 at the African Union Headquarters, Addis Ababa, Ethiopia. Catalyzing Youth-Led Innovation for Agenda 2063.">
+    <meta name="keywords" content="PAYCON 2026, Pan-African Youth Conference, Africa, Addis Ababa, AU Headquarters, Agenda 2063, Youth Leadership, African Union">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="PAYCON 2026 - The Africa We Want, The Future We Lead">
+    <meta property="og:description" content="Join visionary young leaders at the AU Headquarters, Addis Ababa, 2–4 September 2026. Africa's premier youth conference.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://paycon2026.org">
+    <meta property="og:image" content="https://paycon2026.org/logo.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="PAYCON 2026">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter / X Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@PAYCON2026">
+    <meta name="twitter:title" content="PAYCON 2026 - The Africa We Want, The Future We Lead">
+    <meta name="twitter:description" content="Join visionary young leaders at the AU Headquarters, Addis Ababa, 2–4 September 2026.">
+    <meta name="twitter:image" content="https://paycon2026.org/logo.png">
+
+    <!-- Tailwind CSS Play CDN (stable v3) -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif']
+                    },
+                    colors: {
+                        panred:   '#E31C23',
+                        pangreen: '#596534',
+                        pangold:  '#D49D24',
+                        darkbg:   '#FDFBF7',
+                        darkcard: '#FFFFFF',
+                        panlgreen:'#7A8C4A'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        :root {
+            --panred:   #E31C23;
+            --pangreen: #596534;
+            --pangold:  #D49D24;
+            --panlgreen:#7A8C4A;
+        }
+
+        /* ===== Scroll & Base ===== */
+        html { scroll-behavior: smooth; }
+        * { box-sizing: border-box; }
+
+        /* ===== Pattern Background ===== */
+        .pattern-bg {
+            background-color: #FDFBF7;
+            background-image: radial-gradient(rgba(212,157,36,0.08) 1px, transparent 1px);
+            background-size: 22px 22px;
+        }
+
+        /* ===== Glassmorphism ===== */
+        .glass {
+            background: rgba(255,255,255,0.88);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            border: 1px solid rgba(0,0,0,0.06);
+        }
+        .glass-dark {
+            background: rgba(0,0,0,0.55);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        /* ===== Gradient text ===== */
+        .gradient-text {
+            background: linear-gradient(90deg, #D49D24, #596534);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .gradient-text-red {
+            background: linear-gradient(90deg, #E31C23, #D49D24);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* ===== Hero ===== */
+        .hero-bg {
+            background:
+                linear-gradient(to bottom, rgba(253,251,247,0.88) 0%, rgba(253,251,247,0.96) 100%),
+                radial-gradient(ellipse at 20% 40%, rgba(89,101,52,0.18) 0%, transparent 55%),
+                radial-gradient(ellipse at 80% 20%, rgba(212,157,36,0.15) 0%, transparent 50%),
+                radial-gradient(ellipse at 60% 80%, rgba(227,28,35,0.10) 0%, transparent 45%),
+                linear-gradient(135deg, #F5F0E8 0%, #FDFBF7 50%, #F0EDE4 100%);
+            min-height: 100vh;
+        }
+
+        /* ===== Ticker ===== */
+        @keyframes ticker {
+            0%   { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .ticker-wrap { overflow: hidden; white-space: nowrap; }
+        .ticker-inner { display: inline-block; animation: ticker 30s linear infinite; }
+        .ticker-inner:hover { animation-play-state: paused; }
+
+        /* ===== Section label ===== */
+        .section-label {
+            display: inline-block;
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            padding: 0.35rem 1rem;
+            border-radius: 999px;
+            margin-bottom: 1rem;
+        }
+
+        /* ===== Cards ===== */
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+        }
+
+        /* ===== Nav ===== */
+        #main-nav {
+            transition: background 0.3s ease, box-shadow 0.3s ease;
+        }
+        #main-nav.scrolled {
+            background: rgba(255,255,255,0.96);
+            box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+        }
+        .nav-link {
+            position: relative;
+            font-weight: 600;
+            font-size: 0.88rem;
+            color: #374151;
+            transition: color 0.2s;
+            padding-bottom: 2px;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -2px; left: 0;
+            width: 0; height: 2px;
+            background: var(--pangreen);
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover { color: var(--pangreen); }
+        .nav-link:hover::after { width: 100%; }
+
+        /* ===== Countdown ===== */
+        .countdown-box {
+            background: rgba(255,255,255,0.9);
+            border: 1px solid rgba(212,157,36,0.3);
+            border-radius: 12px;
+            padding: 0.75rem 1.25rem;
+            min-width: 70px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+        }
+        .countdown-num { font-size: 2rem; font-weight: 800; color: var(--pangreen); line-height: 1; }
+        .countdown-label { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #888; margin-top: 4px; }
+
+        /* ===== Timeline/Agenda ===== */
+        .timeline-day { border-left: 3px solid var(--pangold); }
+        .agenda-item {
+            transition: background 0.2s;
+            cursor: pointer;
+        }
+        .agenda-item:hover { background: rgba(212,157,36,0.06); }
+        .agenda-detail { display: none; }
+        .agenda-item.open .agenda-detail { display: block; }
+        .agenda-item.open .agenda-chevron { transform: rotate(180deg); }
+        .agenda-chevron { transition: transform 0.3s ease; }
+
+        /* ===== Sponsorship Table ===== */
+        .tier-header { writing-mode: horizontal-tb; }
+        .check-yes { color: var(--pangreen); }
+        .check-no  { color: #d1d5db; }
+
+        /* ===== FAQ Accordion ===== */
+        .faq-answer { display: none; }
+        .faq-item.open .faq-answer { display: block; }
+        .faq-item.open .faq-icon { transform: rotate(45deg); }
+        .faq-icon { transition: transform 0.3s ease; }
+
+        /* ===== Team (preserved from original) ===== */
+        .tab-btn { transition: all 0.3s ease; }
+        .tab-btn.active { background: rgba(212,157,36,0.15); border-color: #D49D24; color: #596534; }
+        .tab-panel { display: none; }
+        .tab-panel.active { display: grid; }
+        .unit-leadership    { --unit-color: #D49D24; }
+        .unit-operations    { --unit-color: #008751; }
+        .unit-finance       { --unit-color: #3B82F6; }
+        .unit-partnerships  { --unit-color: #8B5CF6; }
+        .unit-content       { --unit-color: #F97316; }
+        .unit-communications{ --unit-color: #EC4899; }
+        .unit-delegate      { --unit-color: #06B6D4; }
+        .unit-protocol      { --unit-color: #E31C23; }
+        .unit-documentation { --unit-color: #10B981; }
+        .unit-technical     { --unit-color: #6366F1; }
+        .unit-coordinators  { --unit-color: #F59E0B; }
+        .member-card { transition: all 0.3s ease; border-color: rgba(0,0,0,0.06); }
+        .member-card:hover { transform: translateY(-5px); border-color: var(--unit-color); box-shadow: 0 12px 40px rgba(0,0,0,0.12); }
+        .role-badge { background: color-mix(in srgb, var(--unit-color) 12%, transparent); color: var(--unit-color); }
+        .tabs-scroll { overflow-x: auto; scrollbar-width: none; }
+        .tabs-scroll::-webkit-scrollbar { display: none; }
+
+        /* ===== Mobile menu ===== */
+        #mobile-menu { display: none; }
+        #mobile-menu.open { display: block; }
+
+        /* ===== Animate on scroll ===== */
+        .reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.65s ease, transform 0.65s ease; }
+        .reveal.visible { opacity: 1; transform: translateY(0); }
+
+        /* ===== Progress bar ===== */
+        #scroll-progress {
+            position: fixed; top: 0; left: 0; height: 3px; z-index: 9999;
+            background: linear-gradient(90deg, var(--pangreen), var(--pangold));
+            width: 0%; transition: width 0.1s linear;
+        }
+
+        /* ===== Back to top ===== */
+        #back-top {
+            position: fixed; bottom: 2rem; right: 2rem; z-index: 1000;
+            width: 44px; height: 44px; border-radius: 50%;
+            background: var(--pangreen); color: white;
+            display: flex; align-items: center; justify-content: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+            cursor: pointer; opacity: 0; pointer-events: none;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+        #back-top.show { opacity: 1; pointer-events: all; }
+        #back-top:hover { transform: translateY(-3px); }
+
+        /* ===== Divider ===== */
+        .divider { border: none; height: 1px; background: linear-gradient(90deg, transparent, rgba(212,157,36,0.3), transparent); margin: 0; }
+
+        /* ===================================================== */
+        /* RESPONSIVE BREAKPOINTS                                  */
+        /* ===================================================== */
+
+        /* --- Mobile: section vertical padding --- */
+        @media (max-width: 767px) {
+            section { padding-top: 3.5rem !important; padding-bottom: 3.5rem !important; }
+            .text-center.mb-16 { margin-bottom: 2.5rem; }
+            .text-center.mb-14 { margin-bottom: 2rem; }
+        }
+        @media (min-width: 768px) and (max-width: 1023px) {
+            section { padding-top: 5rem !important; padding-bottom: 5rem !important; }
+            .text-center.mb-16 { margin-bottom: 3.5rem; }
+        }
+
+        /* --- Small phones (< 480px): countdown compact --- */
+        @media (max-width: 479px) {
+            #countdown { gap: 0.35rem; }
+            .countdown-box { min-width: 52px; padding: 0.4rem 0.6rem; }
+            .countdown-num { font-size: 1.45rem; }
+            .countdown-label { font-size: 0.57rem; }
+        }
+
+        /* --- Small phones (< 480px): hero adjustments --- */
+        @media (max-width: 479px) {
+            #hero h1 { font-size: 1.85rem; line-height: 1.2; }
+            /* Date badge: collapse dividers, tighten gap */
+            #hero .inline-flex.gap-4 { gap: 0.6rem; padding: 0.6rem 0.9rem; }
+            #hero .w-px.h-10 { display: none; }
+            /* Location badge: smaller text */
+            #hero .tracking-widest.mb-6 { font-size: 0.6rem; letter-spacing: 0.08em; padding: 0.3rem 0.75rem; }
+        }
+
+        /* --- Mobile (< 640px): agenda detail indent reduction --- */
+        @media (max-width: 639px) {
+            .agenda-detail { padding-left: 0.75rem !important; }
+        }
+
+        /* --- Mobile (< 640px): ticker tighter text --- */
+        @media (max-width: 639px) {
+            .ticker-inner { font-size: 0.65rem; letter-spacing: 0.06em; }
+        }
+
+        /* --- Mobile (< 640px): glass card padding reduction --- */
+        @media (max-width: 639px) {
+            .glass.rounded-2xl.p-8 { padding: 1.25rem !important; }
+            .glass.rounded-2xl.p-7 { padding: 1.1rem !important; }
+            .glass.rounded-2xl.p-6 { padding: 1rem !important; }
+            .glass.p-8 { padding: 1.25rem !important; }
+        }
+
+        /* --- Mobile (< 768px): team photo popup hidden (no hover on touch) --- */
+        @media (max-width: 767px) {
+            .member-card .absolute.z-50 { display: none !important; }
+        }
+
+        /* --- Mobile (< 640px): back-to-top button smaller --- */
+        @media (max-width: 639px) {
+            #back-top { width: 38px !important; height: 38px !important;
+                        bottom: 1rem !important; right: 1rem !important; }
+        }
+
+        /* --- Tablet sm (640–767px): footer 2-column layout --- */
+        @media (min-width: 640px) and (max-width: 767px) {
+            footer > div > .grid { grid-template-columns: repeat(2, 1fr) !important; gap: 2rem !important; }
+        }
+
+        /* --- Mobile: hero hero section pt/pb adjustment --- */
+        @media (max-width: 639px) {
+            #hero { padding-top: 6rem !important; padding-bottom: 10rem !important; }
+        }
+
+        /* --- Mobile: stats bar 2-col tighter --- */
+        @media (max-width: 479px) {
+            #hero .grid.grid-cols-2 { gap: 0.75rem; }
+            #hero .text-3xl.font-extrabold { font-size: 1.5rem; }
+        }
+
+        /* --- Mobile: section header h2 sizing --- */
+        @media (max-width: 479px) {
+            .text-center h2.text-5xl,
+            .text-center h2.md\:text-5xl { font-size: 1.75rem !important; }
+        }
+
+        /* --- Mobile: nav height on smaller phones --- */
+        @media (max-width: 374px) {
+            #main-nav .h-20 { height: 4rem; }
+            #main-nav img.h-14 { height: 2.75rem; }
+        }
+
+        /* --- Tablet (768–1023px): program day tabs wrap --- */
+        @media (max-width: 767px) {
+            .day-btn { font-size: 0.8rem; padding: 0.5rem 1rem; }
+        }
+
+        /* --- Mobile: registration CTA box padding --- */
+        @media (max-width: 639px) {
+            .glass.inline-block.rounded-3xl { padding: 1.5rem 1rem; }
+        }
+
+        /* --- Mobile: who attends grid text --- */
+        @media (max-width: 479px) {
+            #attend .glass h4 { font-size: 0.8rem; }
+            #attend .glass p { font-size: 0.7rem; }
+        }
+
+        /* --- Mobile: tab buttons smaller on small screens --- */
+        @media (max-width: 639px) {
+            .tab-btn { font-size: 0.75rem; padding: 0.35rem 0.7rem; }
+        }
+
+        /* --- Mobile: hero CTA buttons full-width on tiny screens --- */
+        @media (max-width: 479px) {
+            #hero .flex.flex-wrap a {
+                flex: 1 1 100%;
+                justify-content: center;
+                padding: 0.75rem 1rem;
+                font-size: 0.85rem;
+            }
+        }
+
+        /* --- Mobile: partners grid single col --- */
+        @media (max-width: 639px) {
+            #partners .grid.md\:grid-cols-3 { grid-template-columns: 1fr !important; }
+        }
+
+        /* --- Mobile: contact grid stacked --- */
+        @media (max-width: 767px) {
+            #contact .grid.md\:grid-cols-2 { grid-template-columns: 1fr !important; }
+        }
+    </style>
+</head>
+<body class="pattern-bg text-gray-800 font-sans antialiased text-lg">
+
+    <!-- Scroll Progress -->
+    <div id="scroll-progress"></div>
+    <!-- Back to top -->
+    <div id="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+        <i class="fa-solid fa-chevron-up text-base"></i>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- NAVIGATION -->
+    <!-- ============================================================ -->
+    <nav id="main-nav" class="fixed w-full z-50 glass transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="#hero" class="flex-shrink-0 flex items-center gap-2">
+                    <img src="logo.png" alt="PAYCON 2026 Logo" class="h-14" width="160" height="56" loading="lazy">
+                </a>
+
+                <!-- Desktop Nav -->
+                <div class="hidden lg:flex items-center gap-6">
+                    <a href="#about"        class="nav-link">About</a>
+                    <a href="#theme"        class="nav-link">Theme</a>
+                    <a href="#program"      class="nav-link">Program</a>
+                    <a href="#details"      class="nav-link">Details</a>
+                    <a href="#registration" class="nav-link">Register</a>
+                    <a href="#team"         class="nav-link">Team</a>
+                    <a href="#sponsors"     class="nav-link">Sponsors</a>
+                    <a href="#contact"      class="nav-link">Contact</a>
+                </div>
+                <div class="hidden lg:flex items-center gap-3">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfXJzftpyDyGidDd3RdRiCgNzpI2tUcj71TSC2_8xYxCyjVLA/viewform" target="_blank" class="bg-pangreen text-white px-5 py-2.5 rounded-full text-base font-bold hover:bg-opacity-90 transition shadow-sm">
+                        Register Now
+                    </a>
+                </div>
+
+                <!-- Hamburger -->
+                <button id="hamburger" class="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition" onclick="toggleMenu()">
+                    <i class="fa-solid fa-bars text-gray-700 text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="lg:hidden border-t border-gray-100 bg-white/95">
+            <div class="px-4 py-4 flex flex-col gap-3">
+                <a href="#about"        class="nav-link py-2 border-b border-gray-50" onclick="toggleMenu()">About</a>
+                <a href="#theme"        class="nav-link py-2 border-b border-gray-50" onclick="toggleMenu()">Theme & Sub-Themes</a>
+                <a href="#program"      class="nav-link py-2 border-b border-gray-50" onclick="toggleMenu()">Program</a>
+                <a href="#details"      class="nav-link py-2 border-b border-gray-50" onclick="toggleMenu()">Event Details</a>
+                <a href="#attend"       class="nav-link py-2 border-b border-gray-50" onclick="toggleMenu()">Who Attends</a>
+                <a href="#registration" class="nav-link py-2 border-b border-gray-50" onclick="toggleMenu()">Registration</a>
+                <a href="#team"         class="nav-link py-2 border-b border-gray-50" onclick="toggleMenu()">Our Team</a>
+                <a href="#sponsors"     class="nav-link py-2 border-b border-gray-50" onclick="toggleMenu()">Sponsors</a>
+                <a href="#contact"      class="nav-link py-2 border-b border-gray-50" onclick="toggleMenu()">Contact</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfXJzftpyDyGidDd3RdRiCgNzpI2tUcj71TSC2_8xYxCyjVLA/viewform" target="_blank" class="bg-pangreen text-white px-5 py-3 rounded-full text-base font-bold text-center mt-2 shadow">Register Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ============================================================ -->
+    <!-- HERO SECTION -->
+    <!-- ============================================================ -->
+    <section id="hero" class="hero-bg flex flex-col items-center justify-center text-center px-4 pt-28 pb-40 relative overflow-hidden">
+
+        <!-- Decorative circles -->
+        <div class="absolute top-20 left-10 w-72 h-72 rounded-full bg-pangold/8 blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-20 right-10 w-96 h-96 rounded-full bg-pangreen/8 blur-3xl pointer-events-none"></div>
+
+        <div class="relative z-10 max-w-5xl mx-auto">
+            <!-- Badge -->
+            <div class="inline-flex items-center gap-2 bg-pangreen/10 border border-pangreen/20 text-pangreen px-4 py-2 rounded-full text-sm font-bold uppercase tracking-widest mb-6">
+                <i class="fa-solid fa-earth-africa"></i>
+                African Union Headquarters · Addis Ababa, Ethiopia
+            </div>
+
+            <!-- Title -->
+            <h1 class="text-4xl sm:text-5xl md:text-7xl font-extrabold leading-tight text-gray-900 mb-4">
+                The Africa We Want,<br>
+                <span class="gradient-text font-serif italic">The Future We Lead</span>
+            </h1>
+
+            <!-- Sub-theme -->
+            <p class="text-pangold font-bold tracking-wide text-base md:text-lg mb-8 uppercase max-w-2xl mx-auto">
+                Catalyzing Youth-Led Innovation for Agenda 2063
+            </p>
+
+            <!-- Date badge -->
+            <div class="inline-flex flex-wrap items-center justify-center gap-3 sm:gap-4 glass border border-pangold/30 rounded-2xl px-4 sm:px-6 py-3 mb-10 shadow-sm">
+                <div class="text-center">
+                    <div class="text-2xl font-extrabold text-pangreen">2 – 4</div>
+                    <div class="text-sm text-gray-500 font-semibold uppercase tracking-wide">September</div>
+                </div>
+                <div class="w-px h-10 bg-gray-200"></div>
+                <div class="text-center">
+                    <div class="text-2xl font-extrabold text-pangold">2026</div>
+                    <div class="text-sm text-gray-500 font-semibold uppercase tracking-wide">Conference</div>
+                </div>
+                <div class="w-px h-10 bg-gray-200"></div>
+                <div class="text-center">
+                    <div class="text-base font-bold text-gray-700">AU HQ</div>
+                    <div class="text-sm text-gray-500 font-semibold">Addis Ababa</div>
+                </div>
+            </div>
+
+            <!-- Countdown -->
+            <div class="mb-10">
+                <p class="text-sm font-bold uppercase tracking-widest text-gray-500 mb-3">Conference begins in</p>
+                <div class="flex items-start justify-center gap-3" id="countdown">
+                    <div class="countdown-box"><div class="countdown-num" id="cd-days">--</div><div class="countdown-label">Days</div></div>
+                    <div class="countdown-box"><div class="countdown-num" id="cd-hours">--</div><div class="countdown-label">Hours</div></div>
+                    <div class="countdown-box"><div class="countdown-num" id="cd-mins">--</div><div class="countdown-label">Mins</div></div>
+                    <div class="countdown-box"><div class="countdown-num" id="cd-secs">--</div><div class="countdown-label">Secs</div></div>
+                </div>
+            </div>
+
+            <!-- CTA Buttons -->
+            <div class="flex flex-wrap gap-2 sm:gap-3 justify-center">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfXJzftpyDyGidDd3RdRiCgNzpI2tUcj71TSC2_8xYxCyjVLA/viewform" target="_blank" class="bg-pangreen text-white px-5 sm:px-7 py-3 sm:py-3.5 rounded-full font-bold text-sm sm:text-base hover:bg-opacity-90 shadow-lg transition flex items-center gap-2">
+                    <i class="fa-solid fa-user-plus"></i> Register Now
+                </a>
+                <a href="#sponsors" class="bg-pangold text-white px-5 sm:px-7 py-3 sm:py-3.5 rounded-full font-bold text-sm sm:text-base hover:bg-opacity-90 shadow-lg transition flex items-center gap-2">
+                    <i class="fa-solid fa-handshake"></i> Become a Partner
+                </a>
+                <a href="#sponsors" class="border-2 border-pangreen text-pangreen px-5 sm:px-7 py-3 sm:py-3.5 rounded-full font-bold text-sm sm:text-base hover:bg-pangreen/8 transition flex items-center gap-2">
+                    <i class="fa-solid fa-star"></i> Sponsor PAYCON
+                </a>
+                <a href="#" class="border-2 border-pangold text-pangold px-5 sm:px-7 py-3 sm:py-3.5 rounded-full font-bold text-sm sm:text-base hover:bg-pangold/8 transition flex items-center gap-2">
+                    <i class="fa-solid fa-download"></i> Download Brochure
+                </a>
+            </div>
+        </div>
+
+        <!-- Stats Bar -->
+        <div class="absolute bottom-0 left-0 w-full glass border-t border-gray-100 py-4 sm:py-6">
+            <div class="max-w-5xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 text-center">
+                <div><div class="text-3xl font-extrabold text-pangold">54</div><p class="text-gray-500 text-sm font-semibold uppercase tracking-wide mt-1">African Countries</p></div>
+                <div><div class="text-3xl font-extrabold text-pangold">10,000+</div><p class="text-gray-500 text-sm font-semibold uppercase tracking-wide mt-1">Youth Delegates</p></div>
+                <div><div class="text-3xl font-extrabold text-pangold">150+</div><p class="text-gray-500 text-sm font-semibold uppercase tracking-wide mt-1">Global Speakers</p></div>
+                <div><div class="text-3xl font-extrabold text-pangold">30+</div><p class="text-gray-500 text-sm font-semibold uppercase tracking-wide mt-1">Partners & Sponsors</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ticker -->
+    <div class="bg-pangreen text-white py-2.5 overflow-hidden">
+        <div class="ticker-wrap">
+            <span class="ticker-inner text-sm font-semibold tracking-widest uppercase">
+                &nbsp;&nbsp;<i class="fa-solid fa-earth-africa mr-1"></i> PAYCON 2026 &middot; 2&ndash;4 September &middot; AU Headquarters Addis Ababa &nbsp;|&nbsp; <i class="fa-solid fa-award mr-1"></i> 100 Scholarship Slots Available &nbsp;|&nbsp; <i class="fa-solid fa-calendar-days mr-1"></i> Registration: 20 June &ndash; 20 August 2026 &nbsp;|&nbsp; <i class="fa-solid fa-handshake mr-1"></i> Partnerships Open &nbsp;|&nbsp; <i class="fa-solid fa-bolt mr-1"></i> Early Bird: 20 June &ndash; 20 July &nbsp;|&nbsp; <i class="fa-solid fa-earth-africa mr-1"></i> PAYCON 2026 &middot; 2&ndash;4 September &middot; AU Headquarters Addis Ababa &nbsp;|&nbsp; <i class="fa-solid fa-award mr-1"></i> 100 Scholarship Slots Available &nbsp;|&nbsp; <i class="fa-solid fa-calendar-days mr-1"></i> Registration: 20 June &ndash; 20 August 2026 &nbsp;|&nbsp; <i class="fa-solid fa-handshake mr-1"></i> Partnerships Open &nbsp;|&nbsp; <i class="fa-solid fa-bolt mr-1"></i> Early Bird: 20 June &ndash; 20 July &nbsp;|&nbsp;
+            </span>
+        </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- ABOUT PAYCON -->
+    <!-- ============================================================ -->
+    <section id="about" class="py-24 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <!-- Header -->
+            <div class="text-center mb-16 reveal">
+                <span class="section-label bg-pangreen/10 text-pangreen">Who We Are</span>
+                <h2 class="text-3xl md:text-5xl font-extrabold mb-4">About <span class="gradient-text">PAYCON 2026</span></h2>
+                <p class="text-gray-500 max-w-2xl mx-auto text-lg leading-relaxed">Africa's premier youth conference, uniting the continent's brightest minds to shape the next chapter of our shared story.</p>
+            </div>
+
+            <!-- Two columns -->
+            <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center mb-12 md:mb-16">
+                <div class="reveal">
+                    <h3 class="text-2xl font-bold mb-4">A Continent on the Rise</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Africa is home to the world's youngest population - over <strong>60% of Africans are under 25</strong>. This demographic dividend is not a challenge to manage; it is a transformative force waiting to be harnessed.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        The Pan-African Youth Conference (PAYCON) 2026 is a flagship continental platform that brings together young leaders, innovators, policymakers, researchers, and entrepreneurs from all 54 African nations and the diaspora. Hosted at the symbolic heart of African unity - the <strong>African Union Headquarters in Addis Ababa, Ethiopia</strong> - PAYCON creates a powerful bridge between youth energy and institutional decision-making.
+                    </p>
+                    <div class="space-y-3">
+                        <div class="flex items-start gap-3">
+                            <div class="w-8 h-8 rounded-full bg-pangreen/15 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <i class="fa-solid fa-check text-pangreen text-sm"></i>
+                            </div>
+                            <p class="text-gray-700 text-base">Aligned with the African Union's <strong>Agenda 2063</strong> - Africa's blueprint for inclusive growth and sustainable development.</p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-8 h-8 rounded-full bg-pangold/15 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <i class="fa-solid fa-check text-pangold text-sm"></i>
+                            </div>
+                            <p class="text-gray-700 text-base">Contributing to the <strong>UN Sustainable Development Goals</strong>, especially SDG 8, 9, 10, 16 and 17.</p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-8 h-8 rounded-full bg-panred/15 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <i class="fa-solid fa-check text-panred text-sm"></i>
+                            </div>
+                            <p class="text-gray-700 text-base">Generating tangible <strong>policy declarations</strong> and action frameworks delivered directly to AU institutions.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reveal grid grid-cols-2 gap-3 sm:gap-4">
+                    <div class="glass rounded-2xl p-6 card-hover border border-transparent hover:border-pangold/30">
+                        <div class="w-12 h-12 bg-pangold/12 rounded-xl flex items-center justify-center mb-4">
+                            <i class="fa-solid fa-users text-pangold text-xl"></i>
+                        </div>
+                        <h4 class="font-bold text-lg mb-1">Youth Power</h4>
+                        <p class="text-gray-500 text-base">Mobilizing Africa's 1.3 billion youth as the primary engine of continental transformation.</p>
+                    </div>
+                    <div class="glass rounded-2xl p-6 card-hover border border-transparent hover:border-pangreen/30">
+                        <div class="w-12 h-12 bg-pangreen/12 rounded-xl flex items-center justify-center mb-4">
+                            <i class="fa-solid fa-lightbulb text-pangreen text-xl"></i>
+                        </div>
+                        <h4 class="font-bold text-lg mb-1">Innovation First</h4>
+                        <p class="text-gray-500 text-base">Showcasing homegrown solutions to Africa's most pressing economic and social challenges.</p>
+                    </div>
+                    <div class="glass rounded-2xl p-6 card-hover border border-transparent hover:border-panred/30">
+                        <div class="w-12 h-12 bg-panred/12 rounded-xl flex items-center justify-center mb-4">
+                            <i class="fa-solid fa-landmark text-panred text-xl"></i>
+                        </div>
+                        <h4 class="font-bold text-lg mb-1">Policy Impact</h4>
+                        <p class="text-gray-500 text-base">Translating youth voices into actionable policy recommendations at the continental level.</p>
+                    </div>
+                    <div class="glass rounded-2xl p-6 card-hover border border-transparent hover:border-blue-400/40">
+                        <div class="w-12 h-12 bg-blue-500/10 rounded-xl flex items-center justify-center mb-4">
+                            <i class="fa-solid fa-earth-africa text-blue-500 text-xl"></i>
+                        </div>
+                        <h4 class="font-bold text-lg mb-1">Pan-African Unity</h4>
+                        <p class="text-gray-500 text-base">Building lasting networks across all 54 nations and the African diaspora worldwide.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Objectives -->
+            <div class="reveal">
+                <div class="text-center mb-10">
+                    <span class="section-label bg-pangreen/10 text-pangreen">Conference Goals</span>
+                    <h3 class="text-2xl md:text-3xl font-extrabold">Our Core <span class="text-pangold">Objectives</span></h3>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+                    <div class="glass p-6 rounded-2xl card-hover border border-transparent hover:border-pangold/30 group">
+                        <div class="w-12 h-12 bg-pangold/12 rounded-xl flex items-center justify-center mb-4 group-hover:bg-pangold/20 transition">
+                            <i class="fa-solid fa-crown text-pangold text-lg"></i>
+                        </div>
+                        <h4 class="font-bold mb-2">Youth Leadership</h4>
+                        <p class="text-gray-500 text-base">Empower young Africans to lead conversations and decisions at the highest continental levels.</p>
+                    </div>
+                    <div class="glass p-6 rounded-2xl card-hover border border-transparent hover:border-pangreen/30 group">
+                        <div class="w-12 h-12 bg-pangreen/12 rounded-xl flex items-center justify-center mb-4 group-hover:bg-pangreen/20 transition">
+                            <i class="fa-solid fa-rocket text-pangreen text-lg"></i>
+                        </div>
+                        <h4 class="font-bold mb-2">Innovation Drive</h4>
+                        <p class="text-gray-500 text-base">Foster technological and social innovations that address Africa's unique development needs.</p>
+                    </div>
+                    <div class="glass p-6 rounded-2xl card-hover border border-transparent hover:border-panred/30 group">
+                        <div class="w-12 h-12 bg-panred/12 rounded-xl flex items-center justify-center mb-4 group-hover:bg-panred/20 transition">
+                            <i class="fa-solid fa-comments text-panred text-lg"></i>
+                        </div>
+                        <h4 class="font-bold mb-2">Policy Dialogue</h4>
+                        <p class="text-gray-500 text-base">Create structured dialogue between youth and policymakers that shapes continental governance.</p>
+                    </div>
+                    <div class="glass p-6 rounded-2xl card-hover border border-transparent hover:border-purple-500/30 group">
+                        <div class="w-12 h-12 bg-purple-500/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-purple-500/20 transition">
+                            <i class="fa-solid fa-store text-purple-500 text-lg"></i>
+                        </div>
+                        <h4 class="font-bold mb-2">Entrepreneurship</h4>
+                        <p class="text-gray-500 text-base">Support African startups and young entrepreneurs with networks, mentorship, and visibility.</p>
+                    </div>
+                    <div class="glass p-6 rounded-2xl card-hover border border-transparent hover:border-blue-500/30 group">
+                        <div class="w-12 h-12 bg-blue-500/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-blue-500/20 transition">
+                            <i class="fa-solid fa-globe text-blue-500 text-lg"></i>
+                        </div>
+                        <h4 class="font-bold mb-2">Pan-African Collaboration</h4>
+                        <p class="text-gray-500 text-base">Build cross-border partnerships that transcend national boundaries and regional silos.</p>
+                    </div>
+                    <div class="glass p-6 rounded-2xl card-hover border border-transparent hover:border-emerald-500/30 group">
+                        <div class="w-12 h-12 bg-emerald-500/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-emerald-500/20 transition">
+                            <i class="fa-solid fa-leaf text-emerald-500 text-lg"></i>
+                        </div>
+                        <h4 class="font-bold mb-2">Sustainable Development</h4>
+                        <p class="text-gray-500 text-base">Champion climate action, green economy, and sustainable development for future generations.</p>
+                    </div>
+                    <div class="glass p-6 rounded-2xl card-hover border border-transparent hover:border-orange-500/30 group">
+                        <div class="w-12 h-12 bg-orange-500/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-orange-500/20 transition">
+                            <i class="fa-solid fa-flask text-orange-500 text-lg"></i>
+                        </div>
+                        <h4 class="font-bold mb-2">Research & Knowledge</h4>
+                        <p class="text-gray-500 text-base">Exchange research, data, and evidence-based insights to inform better policy outcomes.</p>
+                    </div>
+                    <div class="glass p-6 rounded-2xl card-hover border border-transparent hover:border-pink-500/30 group">
+                        <div class="w-12 h-12 bg-pink-500/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-pink-500/20 transition">
+                            <i class="fa-solid fa-people-arrows text-pink-500 text-lg"></i>
+                        </div>
+                        <h4 class="font-bold mb-2">Cultural Integration</h4>
+                        <p class="text-gray-500 text-base">Celebrate Africa's rich cultural diversity as a unifying strength for continental identity.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- ============================================================ -->
+    <!-- CONFERENCE THEME & SUB-THEMES -->
+    <!-- ============================================================ -->
+    <section id="theme" class="py-24 bg-white/40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="text-center mb-16 reveal">
+                <span class="section-label bg-pangold/12 text-pangold">Official Theme</span>
+                <h2 class="text-3xl md:text-5xl font-extrabold mb-5">
+                    "<span class="gradient-text">The Africa We Want,</span><br>The Future We Lead"
+                </h2>
+                <p class="text-gray-500 max-w-2xl mx-auto">Catalyzing Youth-Led Innovation for Agenda 2063</p>
+            </div>
+
+            <!-- Sub-themes -->
+            <div class="mb-8 text-center reveal">
+                <h3 class="text-xl font-bold text-gray-700 uppercase tracking-widest text-base mb-8">Five Strategic Sub-Themes</h3>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 reveal">
+
+                <!-- Sub-theme 1 -->
+                <div class="glass rounded-2xl overflow-hidden card-hover border border-transparent hover:border-pangold/40 group">
+                    <div class="h-2 bg-gradient-to-r from-pangold to-yellow-400"></div>
+                    <div class="p-7">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-12 h-12 bg-pangold/12 rounded-xl flex items-center justify-center group-hover:bg-pangold/22 transition">
+                                <i class="fa-solid fa-microchip text-pangold text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-400 font-semibold uppercase tracking-widest">Sub-Theme 1</p>
+                                <h4 class="font-extrabold text-gray-800">Digital Africa & Future of Work</h4>
+                            </div>
+                        </div>
+                        <div class="space-y-2">
+                            <div class="flex items-center gap-2 text-base text-gray-600"><i class="fa-solid fa-angle-right text-pangold text-sm"></i> Artificial Intelligence & Automation</div>
+                            <div class="flex items-center gap-2 text-base text-gray-600"><i class="fa-solid fa-angle-right text-pangold text-sm"></i> Digital Transformation & E-Governance</div>
+                            <div class="flex items-center gap-2 text-base text-gray-600"><i class="fa-solid fa-angle-right text-pangold text-sm"></i> Future Skills & Reskilling</div>
+                            <div class="flex items-center gap-2 text-base text-gray-600"><i class="fa-solid fa-angle-right text-pangold text-sm"></i> Tech Ecosystems & Startup Culture</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sub-theme 2 -->
+                <div class="glass rounded-2xl overflow-hidden card-hover border border-transparent hover:border-pangreen/40 group">
+                    <div class="h-2 bg-gradient-to-r from-pangreen to-emerald-500"></div>
+                    <div class="p-7">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-12 h-12 bg-pangreen/12 rounded-xl flex items-center justify-center group-hover:bg-pangreen/22 transition">
+                                <i class="fa-solid fa-leaf text-pangreen text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-400 font-semibold uppercase tracking-widest">Sub-Theme 2</p>
+                                <h4 class="font-extrabold text-gray-800">Climate Action & Green Economy</h4>
+                            </div>
+                        </div>
+                        <div class="space-y-2">
+                            <div class="flex items-center gap-2 text-base text-gray-600"><i class="fa-solid fa-angle-right text-pangreen text-sm"></i> Climate Justice & Resilience</div>
+                            <div class="flex items-center gap-2 text-base text-gray-600"><i class="fa-solid fa-angle-right text-pangreen text-sm"></i> Renewable Energy Solutions</div>
+                            <div class="flex items-center gap-2 text-base text-gray-600"><i class="fa-solid fa-angle-right text-pangreen text-sm"></i> Sustainable Agriculture & Food Security</div>
+                            <div class="flex items-center gap-2 text-base text-gray-600"><i class="fa-solid fa-angle-right text-pangreen text-sm"></i> Green Finance & ESG Investing</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sub-theme 3 -->
+                <div class="glass rounded-2xl overflow-hidden card-hover border border-transparent hover:border-panred/40 group">
+                    <div class="h-2 bg-gradient-to-r from-panred to-orange-500"></div>
+                    <div class="p-7">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-12 h-12 bg-panred/10 rounded-xl flex items-center justify-center group-hover:bg-panred/18 transition">
+                                <i class="fa-solid fa-scale-balanced text-panred text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-400 font-semibold uppercase tracking-widest">Sub-Theme 3</p>
+                                <h4 class="font-extrabold text-gray-800">Governance, Peace & Security</h4>
+                            </div>
+                        </div>
+                        <div class="space-y-2">
+                            <div class="flex items-center gap-2 text-base text-gray-600"><i class="fa-solid fa-angle-right text-panred text-sm"></i> Democratic Governance & Youth Inclusion</div>
+                            <div class="flex items-center gap-2 text-base text-gray-600"><i class="fa-solid fa-angle-right text-panred text-sm"></i> Conflict Prevention & Peacebuilding</div>
+                            <div class="flex items-center gap-2 text-base text-gray-600"><i class="fa-solid fa-angle-right text-panred text-sm"></i> Human Rights & Social Justice</div>
+                            <div class="flex items-center gap-2 text-base text-gray-600"><i class="fa-solid fa-angle-right text-panred text-sm"></i> Anti-Corruption & Transparency</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sub-theme 4 -->
+                <div class="glass rounded-2xl overflow-hidden card-hover border border-transparent hover:border-blue-500/40 group">
+                    <div class="h-2 bg-gradient-to-r from-blue-500 to-cyan-500"></div>
+                    <div class="p-7">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-12 h-12 bg-blue-500/10 rounded-xl flex items-center justify-center group-hover:bg-blue-500/18 transition">
+                                <i class="fa-solid fa-handshake text-blue-500 text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-400 font-semibold uppercase tracking-widest">Sub-Theme 4</p>
+                                <h4 class="font-extrabold text-gray-800">Trade, AfCFTA & Economic Integration</h4>
+                            </div>
+                        </div>
+                        <div class="space-y-2">
+                            <div class="flex items-center gap-2 text-base text-gray-600"><i class="fa-solid fa-angle-right text-blue-500 text-sm"></i> AfCFTA Implementation & Youth Trade</div>
+                            <div class="flex items-center gap-2 text-base text-gray-600"><i class="fa-solid fa-angle-right text-blue-500 text-sm"></i> Cross-Border Entrepreneurship</div>
+                            <div class="flex items-center gap-2 text-base text-gray-600"><i class="fa-solid fa-angle-right text-blue-500 text-sm"></i> African Financial Markets</div>
+                            <div class="flex items-center gap-2 text-base text-gray-600"><i class="fa-solid fa-angle-right text-blue-500 text-sm"></i> Industrial Policy & Value Chains</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sub-theme 5 -->
+                <div class="glass rounded-2xl overflow-hidden card-hover border border-transparent hover:border-purple-500/40 group md:col-span-2 lg:col-span-1">
+                    <div class="h-2 bg-gradient-to-r from-purple-500 to-pink-500"></div>
+                    <div class="p-7">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-12 h-12 bg-purple-500/10 rounded-xl flex items-center justify-center group-hover:bg-purple-500/18 transition">
+                                <i class="fa-solid fa-heart-pulse text-purple-500 text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-400 font-semibold uppercase tracking-widest">Sub-Theme 5</p>
+                                <h4 class="font-extrabold text-gray-800">Health, Education & Human Development</h4>
+                            </div>
+                        </div>
+                        <div class="space-y-2">
+                            <div class="flex items-center gap-2 text-base text-gray-600"><i class="fa-solid fa-angle-right text-purple-500 text-sm"></i> Universal Health Coverage</div>
+                            <div class="flex items-center gap-2 text-base text-gray-600"><i class="fa-solid fa-angle-right text-purple-500 text-sm"></i> Quality Education & EdTech</div>
+                            <div class="flex items-center gap-2 text-base text-gray-600"><i class="fa-solid fa-angle-right text-purple-500 text-sm"></i> Mental Health & Youth Wellbeing</div>
+                            <div class="flex items-center gap-2 text-base text-gray-600"><i class="fa-solid fa-angle-right text-purple-500 text-sm"></i> Gender Equality & Inclusion</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- ============================================================ -->
+    <!-- PROGRAM OVERVIEW -->
+    <!-- ============================================================ -->
+    <section id="program" class="py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="text-center mb-16 reveal">
+                <span class="section-label bg-panred/10 text-panred">3-Day Summit</span>
+                <h2 class="text-3xl md:text-5xl font-extrabold mb-4">Conference <span class="gradient-text">Program</span></h2>
+                <p class="text-gray-500 max-w-2xl mx-auto">Three transformative days of plenaries, panels, workshops, and networking - designed to inspire, connect, and catalyze action.</p>
+            </div>
+
+            <!-- Day tabs -->
+            <div class="flex justify-center gap-3 mb-10 flex-wrap reveal">
+                <button onclick="showDay('day1')" id="daybtn-day1" class="day-btn bg-pangreen text-white px-6 py-3 rounded-full font-bold text-base shadow transition">
+                    <i class="fa-solid fa-calendar-day mr-2"></i>Day 1 · Sep 2
+                </button>
+                <button onclick="showDay('day2')" id="daybtn-day2" class="day-btn bg-white border-2 border-pangreen text-pangreen px-6 py-3 rounded-full font-bold text-base transition hover:bg-pangreen/8">
+                    <i class="fa-solid fa-calendar-day mr-2"></i>Day 2 · Sep 3
+                </button>
+                <button onclick="showDay('day3')" id="daybtn-day3" class="day-btn bg-white border-2 border-pangreen text-pangreen px-6 py-3 rounded-full font-bold text-base transition hover:bg-pangreen/8">
+                    <i class="fa-solid fa-calendar-day mr-2"></i>Day 3 · Sep 4
+                </button>
+            </div>
+
+            <!-- Day 1 -->
+            <div id="day1" class="day-panel reveal">
+                <div class="glass rounded-2xl p-4 border border-pangold/20 mb-4">
+                    <div class="flex items-center gap-3 px-3 py-2">
+                        <div class="w-10 h-10 bg-pangold/15 rounded-full flex items-center justify-center flex-shrink-0">
+                            <i class="fa-solid fa-flag text-pangold"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-extrabold text-lg text-gray-900">Day One - Defining Africa's Future</h3>
+                            <p class="text-gray-400 text-base">2 September 2026</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-y-2 pl-2">
+                    <div class="agenda-item glass rounded-xl p-4 border-l-4 border-pangold cursor-pointer" onclick="toggleAgenda(this)">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <span class="text-sm font-bold text-pangold bg-pangold/10 px-2 py-1 rounded-lg">08:00</span>
+                                <span class="font-semibold text-gray-800">Arrival, Accreditation & Welcome Coffee</span>
+                            </div>
+                            <i class="fa-solid fa-chevron-down agenda-chevron text-gray-400 text-sm"></i>
+                        </div>
+                        <div class="agenda-detail mt-3 text-base text-gray-500 pl-14">Delegate registration, badge collection, and networking breakfast. Exhibition booths open.</div>
+                    </div>
+                    <div class="agenda-item glass rounded-xl p-4 border-l-4 border-pangreen cursor-pointer" onclick="toggleAgenda(this)">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <span class="text-sm font-bold text-pangreen bg-pangreen/10 px-2 py-1 rounded-lg">09:30</span>
+                                <span class="font-semibold text-gray-800">Official Opening Ceremony</span>
+                            </div>
+                            <i class="fa-solid fa-chevron-down agenda-chevron text-gray-400 text-sm"></i>
+                        </div>
+                        <div class="agenda-detail mt-3 text-base text-gray-500 pl-14">Welcome addresses from the AU Commissioner for Political Affairs, Heads of State video messages, PAYCON Convener's address, and cultural performances celebrating African heritage.</div>
+                    </div>
+                    <div class="agenda-item glass rounded-xl p-4 border-l-4 border-pangold cursor-pointer" onclick="toggleAgenda(this)">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <span class="text-sm font-bold text-pangold bg-pangold/10 px-2 py-1 rounded-lg">11:00</span>
+                                <span class="font-semibold text-gray-800">Keynote: Africa's Demographic Dividend</span>
+                            </div>
+                            <i class="fa-solid fa-chevron-down agenda-chevron text-gray-400 text-sm"></i>
+                        </div>
+                        <div class="agenda-detail mt-3 text-base text-gray-500 pl-14">High-level keynote address on harnessing Africa's youth population as the continent's greatest strategic asset for the 21st century.</div>
+                    </div>
+                    <div class="agenda-item glass rounded-xl p-4 border-l-4 border-panred cursor-pointer" onclick="toggleAgenda(this)">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <span class="text-sm font-bold text-panred bg-panred/10 px-2 py-1 rounded-lg">12:30</span>
+                                <span class="font-semibold text-gray-800">Networking Lunch & Cultural Showcase</span>
+                            </div>
+                            <i class="fa-solid fa-chevron-down agenda-chevron text-gray-400 text-sm"></i>
+                        </div>
+                        <div class="agenda-detail mt-3 text-base text-gray-500 pl-14">Pan-African lunch with regional cuisine, cultural exhibitions, and structured networking.</div>
+                    </div>
+                    <div class="agenda-item glass rounded-xl p-4 border-l-4 border-pangreen cursor-pointer" onclick="toggleAgenda(this)">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <span class="text-sm font-bold text-pangreen bg-pangreen/10 px-2 py-1 rounded-lg">14:00</span>
+                                <span class="font-semibold text-gray-800">Plenary: Agenda 2063 - Youth as Architects</span>
+                            </div>
+                            <i class="fa-solid fa-chevron-down agenda-chevron text-gray-400 text-sm"></i>
+                        </div>
+                        <div class="agenda-detail mt-3 text-base text-gray-500 pl-14">Panel discussion with AU officials, youth leaders from across Africa, and international development partners on youth's role in achieving Agenda 2063 aspirations.</div>
+                    </div>
+                    <div class="agenda-item glass rounded-xl p-4 border-l-4 border-purple-500 cursor-pointer" onclick="toggleAgenda(this)">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <span class="text-sm font-bold text-purple-500 bg-purple-500/10 px-2 py-1 rounded-lg">15:30</span>
+                                <span class="font-semibold text-gray-800">Breakout Sessions - Governance & Policy Tracks</span>
+                            </div>
+                            <i class="fa-solid fa-chevron-down agenda-chevron text-gray-400 text-sm"></i>
+                        </div>
+                        <div class="agenda-detail mt-3 text-base text-gray-500 pl-14">Parallel sessions on Democratic Participation, Anti-Corruption Frameworks, and Youth in Government. Small group discussions with facilitators.</div>
+                    </div>
+                    <div class="agenda-item glass rounded-xl p-4 border-l-4 border-gray-300 cursor-pointer" onclick="toggleAgenda(this)">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <span class="text-sm font-bold text-gray-500 bg-gray-100 px-2 py-1 rounded-lg">17:30</span>
+                                <span class="font-semibold text-gray-800">Evening Gala & Welcome Reception</span>
+                            </div>
+                            <i class="fa-solid fa-chevron-down agenda-chevron text-gray-400 text-sm"></i>
+                        </div>
+                        <div class="agenda-detail mt-3 text-base text-gray-500 pl-14">Formal welcome gala with pan-African entertainment, networking dinner, and Award of Recognition ceremony for distinguished young African leaders.</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 2 -->
+            <div id="day2" class="day-panel hidden reveal">
+                <div class="glass rounded-2xl p-4 border border-blue-500/20 mb-4">
+                    <div class="flex items-center gap-3 px-3 py-2">
+                        <div class="w-10 h-10 bg-blue-500/15 rounded-full flex items-center justify-center flex-shrink-0">
+                            <i class="fa-solid fa-rocket text-blue-500"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-extrabold text-lg text-gray-900">Day Two - Innovation, Economy & Future of Work</h3>
+                            <p class="text-gray-400 text-base">3 September 2026</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-y-2 pl-2">
+                    <div class="agenda-item glass rounded-xl p-4 border-l-4 border-blue-500 cursor-pointer" onclick="toggleAgenda(this)">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <span class="text-sm font-bold text-blue-500 bg-blue-500/10 px-2 py-1 rounded-lg">08:30</span>
+                                <span class="font-semibold text-gray-800">Morning Plenary: The Digital Africa Imperative</span>
+                            </div>
+                            <i class="fa-solid fa-chevron-down agenda-chevron text-gray-400 text-sm"></i>
+                        </div>
+                        <div class="agenda-detail mt-3 text-base text-gray-500 pl-14">High-impact keynote on AI, fintech, and digital infrastructure as accelerators of African development. Live demo of African-built tech solutions.</div>
+                    </div>
+                    <div class="agenda-item glass rounded-xl p-4 border-l-4 border-pangold cursor-pointer" onclick="toggleAgenda(this)">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <span class="text-sm font-bold text-pangold bg-pangold/10 px-2 py-1 rounded-lg">10:00</span>
+                                <span class="font-semibold text-gray-800">Innovation Showcase & Startup Pitch Competition</span>
+                            </div>
+                            <i class="fa-solid fa-chevron-down agenda-chevron text-gray-400 text-sm"></i>
+                        </div>
+                        <div class="agenda-detail mt-3 text-base text-gray-500 pl-14">African startups present disruptive solutions to a panel of investors and industry leaders. Live audience voting. Prize pool for top 3 startups.</div>
+                    </div>
+                    <div class="agenda-item glass rounded-xl p-4 border-l-4 border-pangreen cursor-pointer" onclick="toggleAgenda(this)">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <span class="text-sm font-bold text-pangreen bg-pangreen/10 px-2 py-1 rounded-lg">12:00</span>
+                                <span class="font-semibold text-gray-800">AfCFTA: Youth & Intra-African Trade Forum</span>
+                            </div>
+                            <i class="fa-solid fa-chevron-down agenda-chevron text-gray-400 text-sm"></i>
+                        </div>
+                        <div class="agenda-detail mt-3 text-base text-gray-500 pl-14">Deep-dive forum on how young Africans can leverage the African Continental Free Trade Area to build cross-border businesses and value chains.</div>
+                    </div>
+                    <div class="agenda-item glass rounded-xl p-4 border-l-4 border-orange-500 cursor-pointer" onclick="toggleAgenda(this)">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <span class="text-sm font-bold text-orange-500 bg-orange-500/10 px-2 py-1 rounded-lg">13:30</span>
+                                <span class="font-semibold text-gray-800">Lunch & Career Fair</span>
+                            </div>
+                            <i class="fa-solid fa-chevron-down agenda-chevron text-gray-400 text-sm"></i>
+                        </div>
+                        <div class="agenda-detail mt-3 text-base text-gray-500 pl-14">Career opportunities from leading African and international organizations. CV clinics, mentorship speed-meetings, and internship announcements.</div>
+                    </div>
+                    <div class="agenda-item glass rounded-xl p-4 border-l-4 border-cyan-500 cursor-pointer" onclick="toggleAgenda(this)">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <span class="text-sm font-bold text-cyan-500 bg-cyan-500/10 px-2 py-1 rounded-lg">14:30</span>
+                                <span class="font-semibold text-gray-800">Professional Skills Masterclasses</span>
+                            </div>
+                            <i class="fa-solid fa-chevron-down agenda-chevron text-gray-400 text-sm"></i>
+                        </div>
+                        <div class="agenda-detail mt-3 text-base text-gray-500 pl-14">Parallel workshops: Public Speaking, Grant Writing, Data Science for Development, Social Entrepreneurship, and Leadership Frameworks.</div>
+                    </div>
+                    <div class="agenda-item glass rounded-xl p-4 border-l-4 border-pink-500 cursor-pointer" onclick="toggleAgenda(this)">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <span class="text-sm font-bold text-pink-500 bg-pink-500/10 px-2 py-1 rounded-lg">16:30</span>
+                                <span class="font-semibold text-gray-800">Scientific Research Congress</span>
+                            </div>
+                            <i class="fa-solid fa-chevron-down agenda-chevron text-gray-400 text-sm"></i>
+                        </div>
+                        <div class="agenda-detail mt-3 text-base text-gray-500 pl-14">Peer-reviewed research presentations from African scholars and students. Poster sessions, abstract presentations, and best paper awards.</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 3 -->
+            <div id="day3" class="day-panel hidden reveal">
+                <div class="glass rounded-2xl p-4 border border-emerald-500/20 mb-4">
+                    <div class="flex items-center gap-3 px-3 py-2">
+                        <div class="w-10 h-10 bg-emerald-500/15 rounded-full flex items-center justify-center flex-shrink-0">
+                            <i class="fa-solid fa-earth-africa text-emerald-500"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-extrabold text-lg text-gray-900">Day Three - Sustainability, Partnerships & Continental Action</h3>
+                            <p class="text-gray-400 text-base">4 September 2026</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-y-2 pl-2">
+                    <div class="agenda-item glass rounded-xl p-4 border-l-4 border-emerald-500 cursor-pointer" onclick="toggleAgenda(this)">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <span class="text-sm font-bold text-emerald-500 bg-emerald-500/10 px-2 py-1 rounded-lg">08:30</span>
+                                <span class="font-semibold text-gray-800">Climate Action Forum: Africa's Green Future</span>
+                            </div>
+                            <i class="fa-solid fa-chevron-down agenda-chevron text-gray-400 text-sm"></i>
+                        </div>
+                        <div class="agenda-detail mt-3 text-base text-gray-500 pl-14">High-level discussion on climate financing, green energy transition, and youth-led climate activism across the continent. COP Youth Caucus updates.</div>
+                    </div>
+                    <div class="agenda-item glass rounded-xl p-4 border-l-4 border-purple-500 cursor-pointer" onclick="toggleAgenda(this)">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <span class="text-sm font-bold text-purple-500 bg-purple-500/10 px-2 py-1 rounded-lg">10:00</span>
+                                <span class="font-semibold text-gray-800">Health Innovation & Universal Healthcare Summit</span>
+                            </div>
+                            <i class="fa-solid fa-chevron-down agenda-chevron text-gray-400 text-sm"></i>
+                        </div>
+                        <div class="agenda-detail mt-3 text-base text-gray-500 pl-14">Conversations on digital health, medical education in Africa, pandemic preparedness, and mental health for African youth. Hosted with FAMSA and APHSNI.</div>
+                    </div>
+                    <div class="agenda-item glass rounded-xl p-4 border-l-4 border-pangreen cursor-pointer" onclick="toggleAgenda(this)">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <span class="text-sm font-bold text-pangreen bg-pangreen/10 px-2 py-1 rounded-lg">11:30</span>
+                                <span class="font-semibold text-gray-800">Partnership Forum: Building the Africa We Want</span>
+                            </div>
+                            <i class="fa-solid fa-chevron-down agenda-chevron text-gray-400 text-sm"></i>
+                        </div>
+                        <div class="agenda-detail mt-3 text-base text-gray-500 pl-14">Strategic MOU signings, partnership announcements between youth organizations, governments, and international development agencies.</div>
+                    </div>
+                    <div class="agenda-item glass rounded-xl p-4 border-l-4 border-pangold cursor-pointer" onclick="toggleAgenda(this)">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <span class="text-sm font-bold text-pangold bg-pangold/10 px-2 py-1 rounded-lg">13:00</span>
+                                <span class="font-semibold text-gray-800">Mentorship Roundtables & Networking Lunch</span>
+                            </div>
+                            <i class="fa-solid fa-chevron-down agenda-chevron text-gray-400 text-sm"></i>
+                        </div>
+                        <div class="agenda-detail mt-3 text-base text-gray-500 pl-14">Curated mentorship sessions connecting young delegates with senior African leaders, entrepreneurs, and international experts.</div>
+                    </div>
+                    <div class="agenda-item glass rounded-xl p-4 border-l-4 border-panred cursor-pointer" onclick="toggleAgenda(this)">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <span class="text-sm font-bold text-panred bg-panred/10 px-2 py-1 rounded-lg">15:00</span>
+                                <span class="font-semibold text-gray-800">PAYCON 2026 Declaration Adoption</span>
+                            </div>
+                            <i class="fa-solid fa-chevron-down agenda-chevron text-gray-400 text-sm"></i>
+                        </div>
+                        <div class="agenda-detail mt-3 text-base text-gray-500 pl-14">Adoption of the Addis Ababa Youth Declaration - a comprehensive action framework for youth-led development, to be formally submitted to the African Union Commission.</div>
+                    </div>
+                    <div class="agenda-item glass rounded-xl p-4 border-l-4 border-pangold cursor-pointer" onclick="toggleAgenda(this)">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <span class="text-sm font-bold text-pangold bg-pangold/10 px-2 py-1 rounded-lg">16:30</span>
+                                <span class="font-semibold text-gray-800">Closing Ceremony & Awards Gala</span>
+                            </div>
+                            <i class="fa-solid fa-chevron-down agenda-chevron text-gray-400 text-sm"></i>
+                        </div>
+                        <div class="agenda-detail mt-3 text-base text-gray-500 pl-14">Closing addresses, awards for Best Research Paper, Outstanding Youth Leader, Innovation Champion, and Cultural Ambassador. Group photo and official closing.</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Conference Components -->
+            <div class="mt-16 reveal">
+                <div class="text-center mb-10">
+                    <span class="section-label bg-pangreen/10 text-pangreen">What to Expect</span>
+                    <h3 class="text-2xl md:text-3xl font-extrabold">Conference <span class="text-pangold">Components</span></h3>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+                    <div class="glass rounded-2xl p-5 text-center card-hover border border-transparent hover:border-pangold/30">
+                        <div class="w-12 h-12 bg-pangold/12 rounded-xl flex items-center justify-center mx-auto mb-3"><i class="fa-solid fa-flask text-pangold"></i></div>
+                        <h4 class="font-bold text-base mb-1">Scientific Congress</h4>
+                        <p class="text-gray-400 text-sm">Peer-reviewed research presentations & abstract submissions</p>
+                    </div>
+                    <div class="glass rounded-2xl p-5 text-center card-hover border border-transparent hover:border-pangreen/30">
+                        <div class="w-12 h-12 bg-pangreen/12 rounded-xl flex items-center justify-center mx-auto mb-3"><i class="fa-solid fa-comments text-pangreen"></i></div>
+                        <h4 class="font-bold text-base mb-1">Policy Dialogue</h4>
+                        <p class="text-gray-400 text-sm">Structured discussions with policymakers & AU officials</p>
+                    </div>
+                    <div class="glass rounded-2xl p-5 text-center card-hover border border-transparent hover:border-blue-500/30">
+                        <div class="w-12 h-12 bg-blue-500/10 rounded-xl flex items-center justify-center mx-auto mb-3"><i class="fa-solid fa-chalkboard-user text-blue-500"></i></div>
+                        <h4 class="font-bold text-base mb-1">Skills Masterclasses</h4>
+                        <p class="text-gray-400 text-sm">Professional development workshops & training tracks</p>
+                    </div>
+                    <div class="glass rounded-2xl p-5 text-center card-hover border border-transparent hover:border-orange-500/30">
+                        <div class="w-12 h-12 bg-orange-500/10 rounded-xl flex items-center justify-center mx-auto mb-3"><i class="fa-solid fa-lightbulb text-orange-500"></i></div>
+                        <h4 class="font-bold text-base mb-1">Innovation Showcase</h4>
+                        <p class="text-gray-400 text-sm">Exhibition of African-built solutions & technologies</p>
+                    </div>
+                    <div class="glass rounded-2xl p-5 text-center card-hover border border-transparent hover:border-yellow-500/30">
+                        <div class="w-12 h-12 bg-yellow-500/10 rounded-xl flex items-center justify-center mx-auto mb-3"><i class="fa-solid fa-trophy text-yellow-500"></i></div>
+                        <h4 class="font-bold text-base mb-1">Startup Competition</h4>
+                        <p class="text-gray-400 text-sm">Pitch competition with investor access & prize pool</p>
+                    </div>
+                    <div class="glass rounded-2xl p-5 text-center card-hover border border-transparent hover:border-pink-500/30">
+                        <div class="w-12 h-12 bg-pink-500/10 rounded-xl flex items-center justify-center mx-auto mb-3"><i class="fa-solid fa-music text-pink-500"></i></div>
+                        <h4 class="font-bold text-base mb-1">Cultural Integration</h4>
+                        <p class="text-gray-400 text-sm">Pan-African performances, food, arts & cultural exchange</p>
+                    </div>
+                    <div class="glass rounded-2xl p-5 text-center card-hover border border-transparent hover:border-cyan-500/30">
+                        <div class="w-12 h-12 bg-cyan-500/10 rounded-xl flex items-center justify-center mx-auto mb-3"><i class="fa-solid fa-briefcase text-cyan-500"></i></div>
+                        <h4 class="font-bold text-base mb-1">Career Fair</h4>
+                        <p class="text-gray-400 text-sm">Employment, internship & fellowship opportunities</p>
+                    </div>
+                    <div class="glass rounded-2xl p-5 text-center card-hover border border-transparent hover:border-purple-500/30">
+                        <div class="w-12 h-12 bg-purple-500/10 rounded-xl flex items-center justify-center mx-auto mb-3"><i class="fa-solid fa-user-tie text-purple-500"></i></div>
+                        <h4 class="font-bold text-base mb-1">Mentorship</h4>
+                        <p class="text-gray-400 text-sm">One-on-one and group sessions with African leaders</p>
+                    </div>
+                    <div class="glass rounded-2xl p-5 text-center card-hover border border-transparent hover:border-pangreen/30 md:col-span-1 lg:col-span-1">
+                        <div class="w-12 h-12 bg-pangreen/12 rounded-xl flex items-center justify-center mx-auto mb-3"><i class="fa-solid fa-handshake text-pangreen"></i></div>
+                        <h4 class="font-bold text-base mb-1">Partnership Forum</h4>
+                        <p class="text-gray-400 text-sm">MOU signings & strategic alliance formation</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- ============================================================ -->
+    <!-- EVENT DETAILS -->
+    <!-- ============================================================ -->
+    <section id="details" class="py-24 bg-white/40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="text-center mb-16 reveal">
+                <span class="section-label bg-pangold/12 text-pangold">Logistics</span>
+                <h2 class="text-3xl md:text-5xl font-extrabold mb-4">Event <span class="gradient-text">Details</span></h2>
+                <p class="text-gray-500 max-w-xl mx-auto">Everything you need to know to prepare for your journey to Addis Ababa.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 reveal">
+
+                <!-- Dates card -->
+                <div class="glass rounded-2xl p-8 border border-transparent hover:border-pangold/30 card-hover">
+                    <div class="w-14 h-14 bg-pangold/12 rounded-xl flex items-center justify-center mb-5">
+                        <i class="fa-solid fa-calendar-days text-pangold text-2xl"></i>
+                    </div>
+                    <h3 class="font-extrabold text-xl mb-4">Important Dates</h3>
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center py-2 border-b border-gray-100">
+                            <span class="text-base text-gray-500 font-medium">Arrival Day</span>
+                            <span class="text-base font-bold text-gray-700">1 Sep 2026</span>
+                        </div>
+                        <div class="flex justify-between items-center py-2 border-b border-gray-100">
+                            <span class="text-base text-gray-500 font-medium">Conference Opens</span>
+                            <span class="text-base font-bold text-pangreen">2 Sep 2026</span>
+                        </div>
+                        <div class="flex justify-between items-center py-2 border-b border-gray-100">
+                            <span class="text-base text-gray-500 font-medium">Conference Closes</span>
+                            <span class="text-base font-bold text-pangreen">4 Sep 2026</span>
+                        </div>
+                        <div class="flex justify-between items-center py-2">
+                            <span class="text-base text-gray-500 font-medium">Departure Day</span>
+                            <span class="text-base font-bold text-gray-700">5 Sep 2026</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Venue card -->
+                <div class="glass rounded-2xl p-8 border border-transparent hover:border-pangreen/30 card-hover">
+                    <div class="w-14 h-14 bg-pangreen/12 rounded-xl flex items-center justify-center mb-5">
+                        <i class="fa-solid fa-location-dot text-pangreen text-2xl"></i>
+                    </div>
+                    <h3 class="font-extrabold text-xl mb-4">Venue</h3>
+                    <h4 class="font-bold text-pangreen mb-1">African Union Headquarters</h4>
+                    <p class="text-gray-500 text-base mb-4">Roosevelt Street · Addis Ababa, Ethiopia</p>
+                    <p class="text-gray-600 text-base leading-relaxed">The AU Headquarters is the symbolic heart of Pan-African unity and the official seat of the African Union Commission - making it the perfect setting for PAYCON 2026.</p>
+                    <a href="https://maps.google.com/?q=African+Union+Headquarters+Addis+Ababa" target="_blank" class="inline-flex items-center gap-2 mt-4 text-pangreen font-semibold text-base hover:underline">
+                        <i class="fa-solid fa-map-location-dot"></i> View on Map
+                    </a>
+                </div>
+
+                <!-- Travel card -->
+                <div class="glass rounded-2xl p-8 border border-transparent hover:border-panred/30 card-hover">
+                    <div class="w-14 h-14 bg-panred/10 rounded-xl flex items-center justify-center mb-5">
+                        <i class="fa-solid fa-plane text-panred text-2xl"></i>
+                    </div>
+                    <h3 class="font-extrabold text-xl mb-4">Getting There</h3>
+                    <div class="space-y-3">
+                        <div>
+                            <p class="text-sm font-bold uppercase tracking-widest text-gray-400 mb-1">Nearest Airport</p>
+                            <p class="font-semibold text-gray-700">Bole International Airport (ADD)</p>
+                            <p class="text-gray-500 text-base">~15 km from the AU Headquarters</p>
+                        </div>
+                        <div class="border-t border-gray-100 pt-3">
+                            <p class="text-sm font-bold uppercase tracking-widest text-gray-400 mb-1">Visa</p>
+                            <span class="inline-flex items-center gap-1.5 bg-emerald-50 text-emerald-700 px-3 py-1 rounded-full text-sm font-bold">
+                                <i class="fa-solid fa-check-circle"></i> Visa on Arrival Available
+                            </span>
+                            <p class="text-gray-500 text-sm mt-2">Citizens of most African countries are eligible. Support letters available upon request.</p>
+                        </div>
+                        <div class="border-t border-gray-100 pt-3">
+                            <p class="text-sm font-bold uppercase tracking-widest text-gray-400 mb-1">Airport Transfer</p>
+                            <p class="text-gray-600 text-base">Shuttle service arranged for registered delegates. Details in confirmation email.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Accommodation -->
+                <div class="glass rounded-2xl p-8 border border-transparent hover:border-purple-500/30 card-hover">
+                    <div class="w-14 h-14 bg-purple-500/10 rounded-xl flex items-center justify-center mb-5">
+                        <i class="fa-solid fa-bed text-purple-500 text-2xl"></i>
+                    </div>
+                    <h3 class="font-extrabold text-xl mb-4">Accommodation</h3>
+                    <div class="bg-purple-50 border border-purple-100 rounded-xl p-4 mb-4">
+                        <p class="text-purple-700 text-base font-semibold"><i class="fa-solid fa-info-circle mr-2"></i>Official partner hotels will be announced soon.</p>
+                    </div>
+                    <p class="text-gray-600 text-base mb-3">Addis Ababa offers a wide range of accommodation options for all budgets. Scholarship awardees will receive accommodation details with their confirmation.</p>
+                    <ul class="space-y-1 text-base text-gray-500">
+                        <li><i class="fa-solid fa-circle-dot text-pangold text-sm mr-2"></i>Budget (ETB 800–1,500/night)</li>
+                        <li><i class="fa-solid fa-circle-dot text-pangold text-sm mr-2"></i>Mid-range ($50–120/night)</li>
+                        <li><i class="fa-solid fa-circle-dot text-pangold text-sm mr-2"></i>Luxury ($150–400/night)</li>
+                    </ul>
+                </div>
+
+                <!-- Health & Safety -->
+                <div class="glass rounded-2xl p-8 border border-transparent hover:border-blue-500/30 card-hover">
+                    <div class="w-14 h-14 bg-blue-500/10 rounded-xl flex items-center justify-center mb-5">
+                        <i class="fa-solid fa-shield-heart text-blue-500 text-2xl"></i>
+                    </div>
+                    <h3 class="font-extrabold text-xl mb-4">Health & Safety</h3>
+                    <div class="space-y-3 text-base text-gray-600">
+                        <div class="flex items-start gap-2">
+                            <i class="fa-solid fa-syringe text-blue-400 mt-0.5 text-sm"></i>
+                            <p>Yellow Fever vaccination certificate required for entry (check country-specific requirements).</p>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <i class="fa-solid fa-pills text-blue-400 mt-0.5 text-sm"></i>
+                            <p>Consult your healthcare provider 4–6 weeks before travel for recommended vaccinations.</p>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <i class="fa-solid fa-phone text-blue-400 mt-0.5 text-sm"></i>
+                            <p>24/7 emergency support line available to all registered delegates.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Travel Tips -->
+                <div class="glass rounded-2xl p-8 border border-transparent hover:border-pangold/30 card-hover">
+                    <div class="w-14 h-14 bg-pangold/12 rounded-xl flex items-center justify-center mb-5">
+                        <i class="fa-solid fa-circle-info text-pangold text-2xl"></i>
+                    </div>
+                    <h3 class="font-extrabold text-xl mb-4">Travel Tips</h3>
+                    <div class="space-y-2 text-base text-gray-600">
+                        <div class="flex items-start gap-2">
+                            <i class="fa-solid fa-sun text-pangold text-sm mt-0.5"></i>
+                            <p><strong>Climate:</strong> Addis Ababa is mild year-round (15–25°C). September can be rainy - pack a light jacket.</p>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <i class="fa-solid fa-money-bill text-pangold text-sm mt-0.5"></i>
+                            <p><strong>Currency:</strong> Ethiopian Birr (ETB). USD, EUR widely accepted. ATMs available at airport and city.</p>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <i class="fa-solid fa-wifi text-pangold text-sm mt-0.5"></i>
+                            <p><strong>Connectivity:</strong> SIM cards available at airport. Conference venue has dedicated high-speed Wi-Fi.</p>
+                        </div>
+                        <div class="flex items-start gap-2">
+                            <i class="fa-solid fa-language text-pangold text-sm mt-0.5"></i>
+                            <p><strong>Language:</strong> Amharic is official. English widely spoken in business, hospitality, and academia.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- ============================================================ -->
+    <!-- WHO SHOULD ATTEND -->
+    <!-- ============================================================ -->
+    <section id="attend" class="py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="text-center mb-16 reveal">
+                <span class="section-label bg-pangreen/10 text-pangreen">Attendance</span>
+                <h2 class="text-3xl md:text-5xl font-extrabold mb-4">Who Should <span class="gradient-text">Attend</span>?</h2>
+                <p class="text-gray-500 max-w-2xl mx-auto">PAYCON 2026 welcomes all young Africans and friends of Africa aged 18–40 from all 54 nations and the diaspora.</p>
+            </div>
+
+            <!-- Age highlight -->
+            <div class="flex justify-center mb-12 reveal">
+                <div class="inline-flex items-center gap-4 glass border border-pangold/30 rounded-2xl px-8 py-4 shadow-sm">
+                    <div class="text-center">
+                        <div class="text-4xl font-extrabold gradient-text">18 – 40</div>
+                        <div class="text-sm text-gray-400 font-semibold uppercase tracking-wide">Years of Age</div>
+                    </div>
+                    <div class="w-px h-12 bg-gray-200"></div>
+                    <div class="text-center">
+                        <div class="text-4xl font-extrabold text-pangreen">54</div>
+                        <div class="text-sm text-gray-400 font-semibold uppercase tracking-wide">African Nations</div>
+                    </div>
+                    <div class="w-px h-12 bg-gray-200"></div>
+                    <div class="text-center">
+                        <div class="text-4xl font-extrabold text-pangold">+</div>
+                        <div class="text-sm text-gray-400 font-semibold uppercase tracking-wide">Global Diaspora</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 reveal">
+                <div class="glass rounded-2xl p-5 text-center card-hover border border-transparent hover:border-pangold/30 group">
+                    <div class="w-12 h-12 bg-pangold/12 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:bg-pangold/22 transition"><i class="fa-solid fa-briefcase text-pangold"></i></div>
+                    <h4 class="font-bold text-base">Young Professionals</h4>
+                    <p class="text-gray-400 text-sm mt-1">Working in public or private sectors</p>
+                </div>
+                <div class="glass rounded-2xl p-5 text-center card-hover border border-transparent hover:border-pangreen/30 group">
+                    <div class="w-12 h-12 bg-pangreen/12 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:bg-pangreen/22 transition"><i class="fa-solid fa-landmark text-pangreen"></i></div>
+                    <h4 class="font-bold text-base">Policymakers</h4>
+                    <p class="text-gray-400 text-sm mt-1">Government & AU representatives</p>
+                </div>
+                <div class="glass rounded-2xl p-5 text-center card-hover border border-transparent hover:border-panred/30 group">
+                    <div class="w-12 h-12 bg-panred/10 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:bg-panred/18 transition"><i class="fa-solid fa-flask text-panred"></i></div>
+                    <h4 class="font-bold text-base">Researchers</h4>
+                    <p class="text-gray-400 text-sm mt-1">Academic scholars & scientists</p>
+                </div>
+                <div class="glass rounded-2xl p-5 text-center card-hover border border-transparent hover:border-blue-500/30 group">
+                    <div class="w-12 h-12 bg-blue-500/10 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:bg-blue-500/18 transition"><i class="fa-solid fa-store text-blue-500"></i></div>
+                    <h4 class="font-bold text-base">Entrepreneurs</h4>
+                    <p class="text-gray-400 text-sm mt-1">Startup founders & innovators</p>
+                </div>
+                <div class="glass rounded-2xl p-5 text-center card-hover border border-transparent hover:border-purple-500/30 group">
+                    <div class="w-12 h-12 bg-purple-500/10 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:bg-purple-500/18 transition"><i class="fa-solid fa-people-group text-purple-500"></i></div>
+                    <h4 class="font-bold text-base">Civil Society</h4>
+                    <p class="text-gray-400 text-sm mt-1">NGOs, CBOs, & advocates</p>
+                </div>
+                <div class="glass rounded-2xl p-5 text-center card-hover border border-transparent hover:border-emerald-500/30 group">
+                    <div class="w-12 h-12 bg-emerald-500/10 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:bg-emerald-500/18 transition"><i class="fa-solid fa-globe text-emerald-500"></i></div>
+                    <h4 class="font-bold text-base">Development Partners</h4>
+                    <p class="text-gray-400 text-sm mt-1">UN agencies & international orgs</p>
+                </div>
+                <div class="glass rounded-2xl p-5 text-center card-hover border border-transparent hover:border-orange-500/30 group">
+                    <div class="w-12 h-12 bg-orange-500/10 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:bg-orange-500/18 transition"><i class="fa-solid fa-graduation-cap text-orange-500"></i></div>
+                    <h4 class="font-bold text-base">Academia</h4>
+                    <p class="text-gray-400 text-sm mt-1">Students, lecturers & professors</p>
+                </div>
+                <div class="glass rounded-2xl p-5 text-center card-hover border border-transparent hover:border-pink-500/30 group">
+                    <div class="w-12 h-12 bg-pink-500/10 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:bg-pink-500/18 transition"><i class="fa-solid fa-camera text-pink-500"></i></div>
+                    <h4 class="font-bold text-base">Media</h4>
+                    <p class="text-gray-400 text-sm mt-1">Journalists & content creators</p>
+                </div>
+                <div class="glass rounded-2xl p-5 text-center card-hover border border-transparent hover:border-cyan-500/30 group">
+                    <div class="w-12 h-12 bg-cyan-500/10 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:bg-cyan-500/18 transition"><i class="fa-solid fa-earth-americas text-cyan-500"></i></div>
+                    <h4 class="font-bold text-base">African Diaspora</h4>
+                    <p class="text-gray-400 text-sm mt-1">Africans abroad connecting home</p>
+                </div>
+                <div class="glass rounded-2xl p-5 text-center card-hover border border-transparent hover:border-pangold/30 group">
+                    <div class="w-12 h-12 bg-pangold/12 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:bg-pangold/22 transition"><i class="fa-solid fa-user-tie text-pangold"></i></div>
+                    <h4 class="font-bold text-base">Government Leaders</h4>
+                    <p class="text-gray-400 text-sm mt-1">Ministers & national delegates</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- ============================================================ -->
+    <!-- REGISTRATION -->
+    <!-- ============================================================ -->
+    <section id="registration" class="py-24 bg-white/40 relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-96 h-96 rounded-full bg-pangreen/5 blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-0 left-0 w-64 h-64 rounded-full bg-pangold/6 blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+
+            <div class="text-center mb-16 reveal">
+                <span class="section-label bg-panred/10 text-panred">Join PAYCON 2026</span>
+                <h2 class="text-3xl md:text-5xl font-extrabold mb-4">Registration <span class="gradient-text">Information</span></h2>
+                <p class="text-gray-500 max-w-xl mx-auto">Secure your place at Africa's premier youth summit. Limited spots available.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6 mb-12 reveal">
+                <!-- Registration Period -->
+                <div class="glass rounded-2xl p-8 border-2 border-pangold/20 card-hover text-center">
+                    <div class="w-16 h-16 bg-pangold/12 rounded-2xl flex items-center justify-center mx-auto mb-5">
+                        <i class="fa-solid fa-calendar-check text-pangold text-2xl"></i>
+                    </div>
+                    <h3 class="font-extrabold text-xl mb-2">Registration Period</h3>
+                    <div class="text-3xl font-extrabold text-pangold mb-2">20 Jun – 20 Aug</div>
+                    <p class="text-gray-500 text-base">Two months to secure your delegate seat for PAYCON 2026.</p>
+                    <div class="mt-4 bg-pangold/8 rounded-xl p-3">
+                        <p class="text-pangold font-bold text-sm uppercase tracking-wide">2026</p>
+                    </div>
+                </div>
+
+                <!-- Early Bird -->
+                <div class="glass rounded-2xl p-8 border-2 border-pangreen/30 card-hover text-center relative overflow-hidden">
+                    <div class="absolute top-3 right-3 bg-pangreen text-white text-sm font-bold px-3 py-1 rounded-full">OPEN NOW</div>
+                    <div class="w-16 h-16 bg-pangreen/12 rounded-2xl flex items-center justify-center mx-auto mb-5">
+                        <i class="fa-solid fa-bolt text-pangreen text-2xl"></i>
+                    </div>
+                    <h3 class="font-extrabold text-xl mb-2">Early Bird</h3>
+                    <div class="text-3xl font-extrabold text-pangreen mb-2">20 Jun – 20 Jul</div>
+                    <p class="text-gray-500 text-base">Register before 20 July for priority access and early bird benefits.</p>
+                    <div class="mt-4 bg-pangreen/8 rounded-xl p-3">
+                        <p class="text-pangreen font-bold text-sm uppercase tracking-wide">Priority registration & benefits</p>
+                    </div>
+                </div>
+
+                <!-- Scholarships -->
+                <div class="glass rounded-2xl p-8 border-2 border-panred/20 card-hover text-center">
+                    <div class="w-16 h-16 bg-panred/10 rounded-2xl flex items-center justify-center mx-auto mb-5">
+                        <i class="fa-solid fa-award text-panred text-2xl"></i>
+                    </div>
+                    <h3 class="font-extrabold text-xl mb-2">Scholarships</h3>
+                    <div class="text-3xl font-extrabold text-panred mb-2">100 Slots</div>
+                    <p class="text-gray-500 text-base">Sponsored scholarships covering registration and accommodation for deserving delegates.</p>
+                    <div class="mt-4 bg-panred/8 rounded-xl p-3">
+                        <p class="text-panred font-bold text-sm uppercase tracking-wide">Full & partial grants available</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Big CTA -->
+            <div class="text-center reveal">
+                <div class="glass inline-block rounded-3xl px-12 py-10 border border-pangreen/20 shadow-xl">
+                    <h3 class="text-2xl font-extrabold mb-2">Ready to Secure Your Place?</h3>
+                    <p class="text-gray-500 mb-6 max-w-md mx-auto">Join thousands of young African leaders shaping the continent's future. Registration is free for scholarship awardees.</p>
+                    <div class="flex flex-wrap gap-3 justify-center">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfXJzftpyDyGidDd3RdRiCgNzpI2tUcj71TSC2_8xYxCyjVLA/viewform" target="_blank" class="bg-pangreen text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-opacity-90 shadow-lg transition flex items-center gap-2">
+                            <i class="fa-solid fa-user-plus"></i> Register as Delegate
+                        </a>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfXJzftpyDyGidDd3RdRiCgNzpI2tUcj71TSC2_8xYxCyjVLA/viewform" target="_blank" class="border-2 border-pangold text-pangold px-8 py-4 rounded-full font-bold text-lg hover:bg-pangold/8 transition flex items-center gap-2">
+                            <i class="fa-solid fa-award"></i> Apply for Scholarship
+                        </a>
+                    </div>
+                    <p class="text-gray-400 text-sm mt-4"><i class="fa-solid fa-lock mr-1"></i> Secure registration · For ages 18–40 · All African nations & diaspora welcome</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- ============================================================ -->
+    <!-- OUR TEAM -->
+    <!-- ============================================================ -->
+    <section id="team" class="py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-14 reveal">
+                <span class="section-label bg-pangold/12 text-pangold">Organising Committee</span>
+                <h2 class="text-3xl md:text-5xl font-extrabold mb-4">Meet Our <span class="gradient-text">Team</span></h2>
+                <p class="text-gray-500 max-w-2xl mx-auto">The dedicated professionals driving <strong>#PAYCON2026</strong> - representing all regions of the African continent.</p>
+            </div>
+
+            <!-- Tabs -->
+            <div class="tabs-scroll mb-10 reveal">
+                <div class="flex gap-2 min-w-max mx-auto justify-start md:justify-center pb-2 px-2">
+                    <button class="tab-btn active glass px-4 py-2 rounded-full text-sm font-bold border border-transparent whitespace-nowrap" onclick="showTab(event,'leadership')"><i class="fa-solid fa-star mr-1"></i>Leadership</button>
+                    <button class="tab-btn glass px-4 py-2 rounded-full text-sm font-bold border border-transparent whitespace-nowrap" onclick="showTab(event,'coordinators')"><i class="fa-solid fa-sitemap mr-1"></i>Coordinators</button>
+                    <button class="tab-btn glass px-4 py-2 rounded-full text-sm font-bold border border-transparent whitespace-nowrap" onclick="showTab(event,'operations')"><i class="fa-solid fa-gears mr-1"></i>Operations</button>
+                    <button class="tab-btn glass px-4 py-2 rounded-full text-sm font-bold border border-transparent whitespace-nowrap" onclick="showTab(event,'finance')"><i class="fa-solid fa-coins mr-1"></i>Finance</button>
+                    <button class="tab-btn glass px-4 py-2 rounded-full text-sm font-bold border border-transparent whitespace-nowrap" onclick="showTab(event,'partnerships')"><i class="fa-solid fa-handshake mr-1"></i>Partnerships</button>
+                    <button class="tab-btn glass px-4 py-2 rounded-full text-sm font-bold border border-transparent whitespace-nowrap" onclick="showTab(event,'content')"><i class="fa-solid fa-lightbulb mr-1"></i>Content</button>
+                    <button class="tab-btn glass px-4 py-2 rounded-full text-sm font-bold border border-transparent whitespace-nowrap" onclick="showTab(event,'communications')"><i class="fa-solid fa-bullhorn mr-1"></i>Communications</button>
+                    <button class="tab-btn glass px-4 py-2 rounded-full text-sm font-bold border border-transparent whitespace-nowrap" onclick="showTab(event,'delegate')"><i class="fa-solid fa-id-badge mr-1"></i>Delegate Mgmt</button>
+                    <button class="tab-btn glass px-4 py-2 rounded-full text-sm font-bold border border-transparent whitespace-nowrap" onclick="showTab(event,'protocol')"><i class="fa-solid fa-shield mr-1"></i>Protocol</button>
+                    <button class="tab-btn glass px-4 py-2 rounded-full text-sm font-bold border border-transparent whitespace-nowrap" onclick="showTab(event,'documentation')"><i class="fa-solid fa-file-lines mr-1"></i>Documentation</button>
+                    <button class="tab-btn glass px-4 py-2 rounded-full text-sm font-bold border border-transparent whitespace-nowrap" onclick="showTab(event,'technical')"><i class="fa-solid fa-laptop-code mr-1"></i>Technical & IT</button>
+                </div>
+            </div>
+
+            <!-- Dynamic Panels -->
+            <div id="panels-container"></div>
+        </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- ============================================================ -->
+    <!-- SPONSORS -->
+    <!-- ============================================================ -->
+    <section id="sponsors" class="py-24 bg-white/40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="text-center mb-16 reveal">
+                <span class="section-label bg-pangold/12 text-pangold">Partnership Opportunities</span>
+                <h2 class="text-3xl md:text-5xl font-extrabold mb-4">Sponsor <span class="gradient-text">PAYCON 2026</span></h2>
+                <p class="text-gray-500 max-w-2xl mx-auto">Align your brand with Africa's most influential youth conference and reach 10,000+ young decision-makers across 54 nations.</p>
+            </div>
+
+            <!-- Tier Cards -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-5 mb-14 reveal">
+                <!-- Platinum -->
+                <div class="glass rounded-2xl p-6 border-2 border-gray-300 card-hover text-center relative overflow-hidden group">
+                    <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-gray-300 via-gray-500 to-gray-300"></div>
+                    <div class="w-14 h-14 bg-gray-100 rounded-xl flex items-center justify-center mx-auto mb-3"><i class="fa-solid fa-gem text-gray-500 text-2xl"></i></div>
+                    <h3 class="font-extrabold text-lg mb-0 text-gray-700">Platinum</h3>
+                    <p class="text-pangold font-extrabold text-lg mb-1">$10,000+</p>
+                    <p class="text-gray-400 text-sm mb-4">Premier Partner</p>
+                    <ul class="text-left space-y-2 text-sm text-gray-600">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-pangreen"></i>Official "Conference Partner" title</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-pangreen"></i>Keynote speaking opportunity</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-pangreen"></i>2 Partner sessions/workshops</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-pangreen"></i>Co-host all workshops & panels</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-pangreen"></i>Branding: main stage, banners, website</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-pangreen"></i>Exhibition booth</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-pangreen"></i>Logo on all merchandise</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-pangreen"></i>Full-page advert in program booklet</li>
+                    </ul>
+                </div>
+                <!-- Gold -->
+                <div class="glass rounded-2xl p-6 border-2 border-pangold/50 card-hover text-center relative overflow-hidden">
+                    <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-pangold to-yellow-400"></div>
+                    <div class="absolute -top-1 -right-1">
+                        <span class="bg-pangold text-white text-sm font-bold px-3 py-1 rounded-bl-xl">Popular</span>
+                    </div>
+                    <div class="w-14 h-14 bg-pangold/15 rounded-xl flex items-center justify-center mx-auto mb-3"><i class="fa-solid fa-star text-pangold text-2xl"></i></div>
+                    <h3 class="font-extrabold text-lg mb-0 text-pangold">Gold</h3>
+                    <p class="text-pangold font-extrabold text-lg mb-1">$5,000 – $10,000</p>
+                    <p class="text-gray-400 text-sm mb-4">Major Sponsor</p>
+                    <ul class="text-left space-y-2 text-sm text-gray-600">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-pangreen"></i>Co-host a workshop or panel</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-pangreen"></i>1 Partner session/workshop</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-pangreen"></i>Branding: website, banners, materials</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-pangreen"></i>Logo on merchandise (bags, notebooks)</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-pangreen"></i>Half-page advert in program</li>
+                    </ul>
+                </div>
+                <!-- Silver -->
+                <div class="glass rounded-2xl p-6 border-2 border-gray-200 card-hover text-center relative overflow-hidden">
+                    <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-gray-300 to-gray-400"></div>
+                    <div class="w-14 h-14 bg-gray-100 rounded-xl flex items-center justify-center mx-auto mb-3"><i class="fa-solid fa-medal text-gray-400 text-2xl"></i></div>
+                    <h3 class="font-extrabold text-lg mb-0 text-gray-600">Silver</h3>
+                    <p class="text-gray-600 font-extrabold text-lg mb-1">$2,500 – $5,000</p>
+                    <p class="text-gray-400 text-sm mb-4">Supporting Sponsor</p>
+                    <ul class="text-left space-y-2 text-sm text-gray-600">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-pangreen"></i>Co-host a workshop or panel</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-pangreen"></i>1 Partner session/workshop</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-pangreen"></i>Branding: website, banners, materials</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-pangreen"></i>Logo on merchandise (bags, notebooks)</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-pangreen"></i>Half-page advert in program</li>
+                    </ul>
+                </div>
+                <!-- Bronze -->
+                <div class="glass rounded-2xl p-6 border-2 border-amber-700/30 card-hover text-center relative overflow-hidden">
+                    <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-amber-600 to-amber-800"></div>
+                    <div class="w-14 h-14 bg-amber-700/10 rounded-xl flex items-center justify-center mx-auto mb-3"><i class="fa-solid fa-shield text-amber-700 text-2xl"></i></div>
+                    <h3 class="font-extrabold text-lg mb-0 text-amber-700">Bronze</h3>
+                    <p class="text-amber-700 font-extrabold text-lg mb-1">$1,000 – $2,500</p>
+                    <p class="text-gray-400 text-sm mb-4">Affiliate Sponsor</p>
+                    <ul class="text-left space-y-2 text-sm text-gray-600">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-pangreen"></i>Co-host a workshop or panel</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-pangreen"></i>1 Partner session/workshop</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-pangreen"></i>Logo on website & select banners</li>
+                    </ul>
+                </div>
+                <!-- Supporter -->
+                <div class="glass rounded-2xl p-6 border-2 border-pangreen/20 card-hover text-center relative overflow-hidden">
+                    <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-pangreen to-emerald-500"></div>
+                    <div class="w-14 h-14 bg-pangreen/12 rounded-xl flex items-center justify-center mx-auto mb-3"><i class="fa-solid fa-heart text-pangreen text-2xl"></i></div>
+                    <h3 class="font-extrabold text-lg mb-0 text-pangreen">Supporter</h3>
+                    <p class="text-pangreen font-extrabold text-lg mb-1">$500 – $1,000</p>
+                    <p class="text-gray-400 text-sm mb-4">Community Partner</p>
+                    <ul class="text-left space-y-2 text-sm text-gray-600">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-pangreen"></i>Co-host a workshop or panel</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-pangreen"></i>Name on website & final report</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="text-center reveal">
+                <a href="#contact" class="bg-pangold text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-opacity-90 shadow-xl transition inline-flex items-center gap-2">
+                    <i class="fa-solid fa-envelope"></i> Request Sponsorship Package
+                </a>
+                <p class="text-gray-400 text-base mt-3">Custom partnership packages available. Contact our partnerships team for details.</p>
+            </div>
+        </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- ============================================================ -->
+    <!-- PARTNERS -->
+    <!-- ============================================================ -->
+    <section id="partners" class="py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="text-center mb-16 reveal">
+                <span class="section-label bg-pangreen/10 text-pangreen">Our Network</span>
+                <h2 class="text-3xl md:text-5xl font-extrabold mb-4">Partners & <span class="gradient-text">Co-Organizers</span></h2>
+                <p class="text-gray-500 max-w-xl mx-auto">Proudly co-organized with leading Pan-African health, youth, and development organizations.</p>
+            </div>
+
+            <!-- Co-organizers -->
+            <div class="mb-12 reveal">
+                <p class="text-center text-sm font-bold uppercase tracking-widest text-gray-400 mb-6">Official Co-Organizers</p>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="glass rounded-2xl p-8 border border-transparent hover:border-pangreen/30 card-hover text-center group">
+                        <div class="w-24 h-24 rounded-2xl flex items-center justify-center mx-auto mb-5 overflow-hidden bg-white p-2">
+                            <img src="assets/logo-famsa.jpeg" alt="FAMSA Logo" class="w-full h-full object-contain" loading="lazy">
+                        </div>
+                        <h4 class="font-extrabold text-lg mb-2">FAMSA</h4>
+                        <p class="text-pangreen text-sm font-bold mb-3">Federation of Africa Medical Students' Associations</p>
+                        <p class="text-gray-500 text-base">Representing medical students across the African continent, championing health education and professional development.</p>
+                    </div>
+                    <div class="glass rounded-2xl p-8 border border-transparent hover:border-pangold/30 card-hover text-center group">
+                        <div class="w-24 h-24 rounded-2xl flex items-center justify-center mx-auto mb-5 overflow-hidden bg-white p-2">
+                            <img src="assets/logo-aphsni.png" alt="Africa Public Health Student Network Initiative Logo" class="w-full h-full object-contain" loading="lazy">
+                        </div>
+                        <h4 class="font-extrabold text-lg mb-2">AfricaPHSN</h4>
+                        <p class="text-pangold text-sm font-bold mb-3">Africa Public Health Student Network Initiative</p>
+                        <p class="text-gray-500 text-base">Building the next generation of African public health leaders through education, advocacy, and community engagement.</p>
+                    </div>
+                    <div class="glass rounded-2xl p-8 border border-transparent hover:border-panred/30 card-hover text-center group">
+                        <div class="w-24 h-24 rounded-2xl flex items-center justify-center mx-auto mb-5 overflow-hidden bg-white p-2">
+                            <img src="assets/logo-bandung-africa.jpeg" alt="Bandung Africa Logo" class="w-full h-full object-contain" loading="lazy">
+                        </div>
+                        <h4 class="font-extrabold text-lg mb-2">Bandung Africa</h4>
+                        <p class="text-panred text-sm font-bold mb-3">Bandung Africa Network</p>
+                        <p class="text-gray-500 text-base">Fostering South-South collaboration and solidarity among African nations and the Global South for shared prosperity.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Strategic partner slots -->
+            <div class="reveal">
+                <p class="text-center text-sm font-bold uppercase tracking-widest text-gray-400 mb-6">Strategic Partners · Announcements Coming Soon</p>
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                    <a href="#contact" class="glass rounded-xl p-5 flex flex-col items-center justify-center border-2 border-dashed border-pangold/30 min-h-[90px] group hover:border-pangold/60 hover:bg-pangold/5 transition text-center gap-2">
+                        <div class="w-9 h-9 rounded-full bg-pangold/10 flex items-center justify-center group-hover:bg-pangold/20 transition">
+                            <i class="fa-solid fa-plus text-pangold text-sm"></i>
+                        </div>
+                        <span class="text-pangold text-xs font-bold uppercase tracking-wide">Become a Partner</span>
+                    </a>
+                    <a href="#contact" class="glass rounded-xl p-5 flex flex-col items-center justify-center border-2 border-dashed border-pangold/30 min-h-[90px] group hover:border-pangold/60 hover:bg-pangold/5 transition text-center gap-2">
+                        <div class="w-9 h-9 rounded-full bg-pangold/10 flex items-center justify-center group-hover:bg-pangold/20 transition">
+                            <i class="fa-solid fa-plus text-pangold text-sm"></i>
+                        </div>
+                        <span class="text-pangold text-xs font-bold uppercase tracking-wide">Become a Partner</span>
+                    </a>
+                    <a href="#contact" class="glass rounded-xl p-5 flex flex-col items-center justify-center border-2 border-dashed border-pangold/30 min-h-[90px] group hover:border-pangold/60 hover:bg-pangold/5 transition text-center gap-2">
+                        <div class="w-9 h-9 rounded-full bg-pangold/10 flex items-center justify-center group-hover:bg-pangold/20 transition">
+                            <i class="fa-solid fa-plus text-pangold text-sm"></i>
+                        </div>
+                        <span class="text-pangold text-xs font-bold uppercase tracking-wide">Become a Partner</span>
+                    </a>
+                    <a href="#contact" class="glass rounded-xl p-5 flex flex-col items-center justify-center border-2 border-dashed border-pangold/30 min-h-[90px] group hover:border-pangold/60 hover:bg-pangold/5 transition text-center gap-2">
+                        <div class="w-9 h-9 rounded-full bg-pangold/10 flex items-center justify-center group-hover:bg-pangold/20 transition">
+                            <i class="fa-solid fa-plus text-pangold text-sm"></i>
+                        </div>
+                        <span class="text-pangold text-xs font-bold uppercase tracking-wide">Become a Partner</span>
+                    </a>
+                </div>
+                <p class="text-center mt-5 text-gray-400 text-sm">Interested in partnering? <a href="#contact" class="text-pangreen font-semibold hover:underline">Contact our partnerships team</a></p>
+            </div>
+        </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- ============================================================ -->
+    <!-- FAQ -->
+    <!-- ============================================================ -->
+    <section id="faq" class="py-24 bg-white/40">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6">
+
+            <div class="text-center mb-16 reveal">
+                <span class="section-label bg-pangreen/10 text-pangreen">Got Questions?</span>
+                <h2 class="text-3xl md:text-5xl font-extrabold mb-4">Frequently Asked <span class="gradient-text">Questions</span></h2>
+            </div>
+
+            <div class="space-y-3 reveal">
+                <div class="faq-item glass rounded-2xl border border-gray-100 overflow-hidden">
+                    <div class="flex items-center justify-between p-5 cursor-pointer" onclick="toggleFaq(this.parentElement)">
+                        <h4 class="font-bold text-gray-800">Who can attend PAYCON 2026?</h4>
+                        <i class="fa-solid fa-plus faq-icon text-pangreen text-base flex-shrink-0 ml-4"></i>
+                    </div>
+                    <div class="faq-answer px-5 pb-5 text-gray-500 text-base leading-relaxed">
+                        PAYCON 2026 is open to young Africans and friends of Africa aged <strong>18–40</strong> from all 54 African nations and the African diaspora worldwide. This includes students, young professionals, researchers, entrepreneurs, policymakers, civil society actors, media professionals, and more.
+                    </div>
+                </div>
+
+                <div class="faq-item glass rounded-2xl border border-gray-100 overflow-hidden">
+                    <div class="flex items-center justify-between p-5 cursor-pointer" onclick="toggleFaq(this.parentElement)">
+                        <h4 class="font-bold text-gray-800">Do I need a visa to travel to Ethiopia?</h4>
+                        <i class="fa-solid fa-plus faq-icon text-pangreen text-base flex-shrink-0 ml-4"></i>
+                    </div>
+                    <div class="faq-answer px-5 pb-5 text-gray-500 text-base leading-relaxed">
+                        Ethiopia offers <strong>Visa on Arrival</strong> for most African passport holders at approximately <strong>$60 USD</strong>. You can also apply for an e-Visa before departure. PAYCON 2026 can provide a <strong>support/invitation letter</strong> upon registration to assist with your visa application. The nearest airport is <strong>Addis Ababa Bole International Airport (ADD)</strong>. Contact our team for details specific to your country.
+                    </div>
+                </div>
+
+                <div class="faq-item glass rounded-2xl border border-gray-100 overflow-hidden">
+                    <div class="flex items-center justify-between p-5 cursor-pointer" onclick="toggleFaq(this.parentElement)">
+                        <h4 class="font-bold text-gray-800">How do I register for PAYCON 2026?</h4>
+                        <i class="fa-solid fa-plus faq-icon text-pangreen text-base flex-shrink-0 ml-4"></i>
+                    </div>
+                    <div class="faq-answer px-5 pb-5 text-gray-500 text-base leading-relaxed">
+                        Registration opens <strong>20 June 2026</strong> and closes <strong>20 August 2026</strong>. Click the "Register Now" button on this page or visit our registration portal. Complete the online form, submit required documents, and await your confirmation email. Early Bird registration closes 20 July 2026.
+                    </div>
+                </div>
+
+                <div class="faq-item glass rounded-2xl border border-gray-100 overflow-hidden">
+                    <div class="flex items-center justify-between p-5 cursor-pointer" onclick="toggleFaq(this.parentElement)">
+                        <h4 class="font-bold text-gray-800">Are scholarships and grants available?</h4>
+                        <i class="fa-solid fa-plus faq-icon text-pangreen text-base flex-shrink-0 ml-4"></i>
+                    </div>
+                    <div class="faq-answer px-5 pb-5 text-gray-500 text-base leading-relaxed">
+                        Yes! We have <strong>100 sponsored scholarship slots</strong> available for deserving delegates. Scholarships may cover registration fees, accommodation, and in some cases, partial travel support. Apply through the scholarship application form during registration. Priority is given to delegates from LDCs and those demonstrating leadership potential.
+                    </div>
+                </div>
+
+                <div class="faq-item glass rounded-2xl border border-gray-100 overflow-hidden">
+                    <div class="flex items-center justify-between p-5 cursor-pointer" onclick="toggleFaq(this.parentElement)">
+                        <h4 class="font-bold text-gray-800">Where exactly is the conference venue?</h4>
+                        <i class="fa-solid fa-plus faq-icon text-pangreen text-base flex-shrink-0 ml-4"></i>
+                    </div>
+                    <div class="faq-answer px-5 pb-5 text-gray-500 text-base leading-relaxed">
+                        PAYCON 2026 will be held at the <strong>African Union Headquarters</strong>, Roosevelt Street, Addis Ababa, Ethiopia. The venue is approximately 15 km from Bole International Airport (ADD). Shuttle transfers will be arranged for registered delegates.
+                    </div>
+                </div>
+
+                <div class="faq-item glass rounded-2xl border border-gray-100 overflow-hidden">
+                    <div class="flex items-center justify-between p-5 cursor-pointer" onclick="toggleFaq(this.parentElement)">
+                        <h4 class="font-bold text-gray-800">Can I submit a research paper or abstract?</h4>
+                        <i class="fa-solid fa-plus faq-icon text-pangreen text-base flex-shrink-0 ml-4"></i>
+                    </div>
+                    <div class="faq-answer px-5 pb-5 text-gray-500 text-base leading-relaxed">
+                        Yes! PAYCON 2026 includes a <strong>Scientific Research Congress</strong> with abstract submissions open to all delegates. Selected abstracts will be presented as oral presentations or posters. All submissions undergo peer review by our Scientific Committee. Guidelines will be published with registration materials.
+                    </div>
+                </div>
+
+                <div class="faq-item glass rounded-2xl border border-gray-100 overflow-hidden">
+                    <div class="flex items-center justify-between p-5 cursor-pointer" onclick="toggleFaq(this.parentElement)">
+                        <h4 class="font-bold text-gray-800">Will there be a virtual/hybrid attendance option?</h4>
+                        <i class="fa-solid fa-plus faq-icon text-pangreen text-base flex-shrink-0 ml-4"></i>
+                    </div>
+                    <div class="faq-answer px-5 pb-5 text-gray-500 text-base leading-relaxed">
+                        We are working on a hybrid attendance option for delegates who cannot travel. Key plenary sessions and high-level panels will be live-streamed. Virtual delegates will have access to recordings, live Q&A, and networking features. Details will be announced closer to the conference.
+                    </div>
+                </div>
+
+                <div class="faq-item glass rounded-2xl border border-gray-100 overflow-hidden">
+                    <div class="flex items-center justify-between p-5 cursor-pointer" onclick="toggleFaq(this.parentElement)">
+                        <h4 class="font-bold text-gray-800">How can my organization become a sponsor or partner?</h4>
+                        <i class="fa-solid fa-plus faq-icon text-pangreen text-base flex-shrink-0 ml-4"></i>
+                    </div>
+                    <div class="faq-answer px-5 pb-5 text-gray-500 text-base leading-relaxed">
+                        We welcome organizational partnerships and sponsorships at all levels - from Platinum to Community Supporter. Visit our <a href="#sponsors" class="text-pangreen font-semibold hover:underline">Sponsors section</a> to see tier benefits, or contact us directly at the email in the Contact section to request our full sponsorship prospectus.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="divider">
+
+    <!-- ============================================================ -->
+    <!-- CONTACT -->
+    <!-- ============================================================ -->
+    <section id="contact" class="py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="text-center mb-16 reveal">
+                <span class="section-label bg-pangold/12 text-pangold">Get in Touch</span>
+                <h2 class="text-3xl md:text-5xl font-extrabold mb-4">Contact <span class="gradient-text">Us</span></h2>
+                <p class="text-gray-500 max-w-xl mx-auto">Have questions about PAYCON 2026? Our team is here to help.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-10 items-start reveal">
+                <!-- Contact Info -->
+                <div class="space-y-5">
+                    <div class="glass rounded-2xl p-6 border border-transparent hover:border-pangreen/30 card-hover flex items-start gap-4">
+                        <div class="w-12 h-12 bg-pangreen/12 rounded-xl flex items-center justify-center flex-shrink-0">
+                            <i class="fa-solid fa-user-tie text-pangreen"></i>
+                        </div>
+                        <div>
+                            <p class="text-sm text-gray-400 font-bold uppercase tracking-widest mb-1">Conference Convener</p>
+                            <h4 class="font-extrabold text-gray-800">Yusuf Awal</h4>
+                            <p class="text-gray-500 text-base">President of FAMSA & PAYCON 2026 Convener</p>
+                            <a href="mailto:president@famsanet.org" class="text-pangreen text-sm font-semibold hover:underline">president@famsanet.org</a>
+                            <span class="text-gray-300 mx-1">·</span>
+                            <a href="tel:+2348089698822" class="text-gray-500 text-sm hover:text-pangreen">+234 808 969 8822</a>
+                        </div>
+                    </div>
+                    <div class="glass rounded-2xl p-6 border border-transparent hover:border-pangold/30 card-hover flex items-start gap-4">
+                        <div class="w-12 h-12 bg-pangold/12 rounded-xl flex items-center justify-center flex-shrink-0">
+                            <i class="fa-solid fa-envelope text-pangold"></i>
+                        </div>
+                        <div>
+                            <p class="text-sm text-gray-400 font-bold uppercase tracking-widest mb-1">General Email</p>
+                            <a href="mailto:panafricanyouthconference2026@gmail.com" class="font-extrabold text-gray-800 hover:text-pangreen transition text-base">panafricanyouthconference2026@gmail.com</a>
+                            <p class="text-gray-500 text-base mt-1">For general enquiries, partnerships & media</p>
+                            <div class="mt-2 border-t border-gray-100 pt-2">
+                                <p class="text-sm text-gray-400 font-bold uppercase tracking-widest mb-1">Conference Coordinator</p>
+                                <p class="text-gray-700 text-base font-semibold">Yuda Sule Paschal</p>
+                                <a href="mailto:panafricanyouthconference@gmail.com" class="text-pangreen text-sm font-semibold hover:underline">panafricanyouthconference@gmail.com</a>
+                                <span class="text-gray-300 mx-1">·</span>
+                                <a href="tel:+255629942163" class="text-gray-500 text-sm hover:text-pangreen">+255 629 942 163</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="glass rounded-2xl p-6 border border-transparent hover:border-emerald-500/30 card-hover flex items-start gap-4">
+                        <div class="w-12 h-12 bg-emerald-500/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                            <i class="fa-brands fa-whatsapp text-emerald-500 text-xl"></i>
+                        </div>
+                        <div>
+                            <p class="text-sm text-gray-400 font-bold uppercase tracking-widest mb-1">WhatsApp Channel</p>
+                            <a href="https://whatsapp.com/channel/0029VbCVMBtF6smrMDn7Lt3B" target="_blank" class="font-extrabold text-gray-800 hover:text-emerald-600 transition">Join our WhatsApp Channel</a>
+                            <p class="text-gray-500 text-base">Get real-time updates and connect with delegates</p>
+                            <a href="tel:+255629942163" class="text-emerald-600 text-sm font-semibold mt-1 inline-block hover:underline"><i class="fa-solid fa-phone text-sm mr-1"></i>+255 629 942 163</a>
+                        </div>
+                    </div>
+                    <div class="glass rounded-2xl p-6 border border-transparent hover:border-blue-500/30 card-hover">
+                        <p class="text-sm text-gray-400 font-bold uppercase tracking-widest mb-4">Follow PAYCON 2026</p>
+                        <div class="flex gap-3 flex-wrap">
+                            <a href="https://www.instagram.com/paycon2026" target="_blank" class="w-10 h-10 bg-pink-500 text-white rounded-xl flex items-center justify-center hover:bg-pink-600 transition" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://x.com/PAYCON2026" target="_blank" class="w-10 h-10 bg-sky-500 text-white rounded-xl flex items-center justify-center hover:bg-sky-600 transition" title="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="https://www.linkedin.com/company/112224502/" target="_blank" class="w-10 h-10 bg-blue-700 text-white rounded-xl flex items-center justify-center hover:bg-blue-800 transition" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="https://whatsapp.com/channel/0029VbCVMBtF6smrMDn7Lt3B" target="_blank" class="w-10 h-10 bg-emerald-500 text-white rounded-xl flex items-center justify-center hover:bg-emerald-600 transition" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                        </div>
+                        <p class="text-gray-400 text-sm mt-3">Follow us for speaker announcements, programme updates, and live coverage. Use <strong>#PAYCON2026</strong></p>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="glass rounded-2xl p-8 border border-gray-100">
+                    <h3 class="font-extrabold text-xl mb-6">Send Us a Message</h3>
+                    <!-- Contact form powered by Formspree — replace YOUR_FORM_ID with your Formspree form ID from formspree.io -->
+                    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" onsubmit="handleForm(event)" class="space-y-4">
+                        <input type="hidden" name="_subject" value="PAYCON 2026 Enquiry">
+                        <input type="hidden" name="_next" value="">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="text-sm font-bold text-gray-500 uppercase tracking-wider mb-2 block">First Name</label>
+                                <input type="text" name="first_name" id="fname" class="w-full glass px-4 py-3 rounded-xl text-base border border-gray-100 focus:border-pangreen focus:outline-none transition" placeholder="Your first name" required>
+                            </div>
+                            <div>
+                                <label class="text-sm font-bold text-gray-500 uppercase tracking-wider mb-2 block">Last Name</label>
+                                <input type="text" name="last_name" id="lname" class="w-full glass px-4 py-3 rounded-xl text-base border border-gray-100 focus:border-pangreen focus:outline-none transition" placeholder="Your last name" required>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="text-sm font-bold text-gray-500 uppercase tracking-wider mb-2 block">Email Address</label>
+                            <input type="email" name="email" id="email" class="w-full glass px-4 py-3 rounded-xl text-base border border-gray-100 focus:border-pangreen focus:outline-none transition" placeholder="your@email.com" required>
+                        </div>
+                        <div>
+                            <label class="text-sm font-bold text-gray-500 uppercase tracking-wider mb-2 block">Organisation</label>
+                            <input type="text" name="organisation" id="org" class="w-full glass px-4 py-3 rounded-xl text-base border border-gray-100 focus:border-pangreen focus:outline-none transition" placeholder="Your institution or organisation">
+                        </div>
+                        <div>
+                            <label class="text-sm font-bold text-gray-500 uppercase tracking-wider mb-2 block">Enquiry Type</label>
+                            <select name="enquiry_type" id="type" class="w-full glass px-4 py-3 rounded-xl text-base border border-gray-100 focus:border-pangreen focus:outline-none transition bg-white">
+                                <option value="">Select enquiry type</option>
+                                <option>General Information</option>
+                                <option>Registration &amp; Scholarships</option>
+                                <option>Sponsorship &amp; Partnerships</option>
+                                <option>Media &amp; Press</option>
+                                <option>Abstract Submission</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="text-sm font-bold text-gray-500 uppercase tracking-wider mb-2 block">Message</label>
+                            <textarea name="message" id="msg" rows="4" class="w-full glass px-4 py-3 rounded-xl text-base border border-gray-100 focus:border-pangreen focus:outline-none transition resize-none" placeholder="Write your message..." required></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-pangreen text-white py-3.5 rounded-xl font-bold text-base hover:bg-opacity-90 transition shadow-lg flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                    <div id="form-success" class="hidden mt-4 bg-emerald-50 border border-emerald-200 text-emerald-700 rounded-xl p-4 text-base font-semibold text-center">
+                        <i class="fa-solid fa-check-circle mr-2"></i>Thank you! Your message has been sent. We'll respond within 48 hours.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- FOOTER -->
+    <!-- ============================================================ -->
+    <footer class="bg-gray-950 text-gray-300 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+
+                <!-- Brand -->
+                <div class="lg:col-span-1">
+                    <div class="flex items-center gap-2 mb-4">
+                        <img src="logo.png" alt="PAYCON 2026" class="h-12 brightness-200" width="140" height="48" loading="lazy">
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-4">Pan-African Youth Conference 2026. Catalyzing Youth-Led Innovation for Agenda 2063.</p>
+                    <div class="flex items-center gap-2 text-xs text-gray-500">
+                        <i class="fa-solid fa-location-dot text-pangold"></i>
+                        <span>AU Headquarters · Addis Ababa, Ethiopia</span>
+                    </div>
+                    <div class="flex items-center gap-2 text-xs text-gray-500 mt-1">
+                        <i class="fa-solid fa-calendar text-pangold"></i>
+                        <span>2 – 4 September 2026</span>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-bold text-white mb-5 text-sm uppercase tracking-widest">Quick Links</h4>
+                    <ul class="space-y-2.5 text-sm text-gray-400">
+                        <li><a href="#about"        class="hover:text-pangold transition">About PAYCON</a></li>
+                        <li><a href="#theme"        class="hover:text-pangold transition">Conference Theme</a></li>
+                        <li><a href="#program"      class="hover:text-pangold transition">Program Overview</a></li>
+                        <li><a href="#registration" class="hover:text-pangold transition">Registration</a></li>
+                        <li><a href="#details"      class="hover:text-pangold transition">Travel & Visa</a></li>
+                        <li><a href="#sponsors"     class="hover:text-pangold transition">Become a Sponsor</a></li>
+                        <li><a href="#faq"          class="hover:text-pangold transition">FAQ</a></li>
+                        <li><a href="#contact"      class="hover:text-pangold transition">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Conference Details -->
+                <div>
+                    <h4 class="font-bold text-white mb-5 text-sm uppercase tracking-widest">Co-Organizers</h4>
+                    <ul class="space-y-2.5 text-sm text-gray-400">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle text-pangold text-xs"></i>FAMSA</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle text-pangold text-xs"></i>Africa Public Health Student Network Initiative</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle text-pangold text-xs"></i>Bandung Africa</li>
+                    </ul>
+                    <div class="mt-6">
+                        <h4 class="font-bold text-white mb-3 text-sm uppercase tracking-widest">Legal</h4>
+                        <ul class="space-y-2 text-sm text-gray-400">
+                            <li><a href="#" class="hover:text-pangold transition">Privacy Policy</a></li>
+                            <li><a href="#" class="hover:text-pangold transition">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Newsletter -->
+                <div>
+                    <h4 class="font-bold text-white mb-5 text-sm uppercase tracking-widest">Stay Updated</h4>
+                    <p class="text-gray-400 text-sm mb-4">Subscribe for speaker announcements, programme updates, and PAYCON 2026 news.</p>
+                    <!-- Newsletter powered by Formspree — replace YOUR_NL_FORM_ID with your newsletter form ID -->
+                    <form action="https://formspree.io/f/YOUR_NL_FORM_ID" method="POST" onsubmit="handleNewsletter(event)" class="space-y-2">
+                        <input type="hidden" name="_subject" value="PAYCON 2026 Newsletter Subscription">
+                        <input type="email" name="email" id="nl-email" placeholder="Your email address" class="w-full bg-gray-800 border border-gray-700 text-white px-4 py-3 rounded-xl text-sm focus:outline-none focus:border-pangold transition" required>
+                        <button type="submit" class="w-full bg-pangold text-black px-4 py-3 rounded-xl font-bold text-sm hover:bg-yellow-400 transition">
+                            Subscribe to Updates
+                        </button>
+                    </form>
+                    <div id="nl-success" class="hidden mt-2 text-emerald-400 text-xs font-semibold"><i class="fa-solid fa-check mr-1"></i>Subscribed! We'll keep you updated.</div>
+                    <div class="flex gap-3 mt-5">
+                        <a href="https://www.instagram.com/paycon2026" target="_blank" class="w-9 h-9 bg-gray-800 text-gray-300 rounded-lg flex items-center justify-center hover:bg-pink-500 hover:text-white transition"><i class="fa-brands fa-instagram text-xs"></i></a>
+                        <a href="https://x.com/PAYCON2026" target="_blank" class="w-9 h-9 bg-gray-800 text-gray-300 rounded-lg flex items-center justify-center hover:bg-sky-500 hover:text-white transition"><i class="fa-brands fa-x-twitter text-xs"></i></a>
+                        <a href="https://www.linkedin.com/company/112224502/" target="_blank" class="w-9 h-9 bg-gray-800 text-gray-300 rounded-lg flex items-center justify-center hover:bg-blue-700 hover:text-white transition"><i class="fa-brands fa-linkedin-in text-xs"></i></a>
+                        <a href="https://whatsapp.com/channel/0029VbCVMBtF6smrMDn7Lt3B" target="_blank" class="w-9 h-9 bg-gray-800 text-gray-300 rounded-lg flex items-center justify-center hover:bg-emerald-500 hover:text-white transition"><i class="fa-brands fa-whatsapp text-xs"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Divider & Copyright -->
+            <div class="border-t border-gray-800 pt-6 flex flex-col md:flex-row items-center justify-between gap-3">
+                <p class="text-gray-500 text-sm text-center md:text-left">
+                    &copy; 2026 Pan-African Youth Conference · <span class="text-gray-400">#PAYCON2026</span>
+                </p>
+                <p class="text-gray-600 text-xs text-center">
+                    "The Africa We Want, The Future We Lead" - Catalyzing Youth-Led Innovation for Agenda 2063
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================================ -->
+    <!-- SCRIPTS -->
+    <!-- ============================================================ -->
+    <script src="teamData.js"></script>
+    <script>
+    // ===== Mobile Menu =====
+    function toggleMenu() {
+        const menu = document.getElementById('mobile-menu');
+        menu.classList.toggle('open');
+    }
+
+    // ===== Nav Scroll Effect =====
+    window.addEventListener('scroll', () => {
+        const nav = document.getElementById('main-nav');
+        const progress = document.getElementById('scroll-progress');
+        const backTop = document.getElementById('back-top');
+        const scrolled = window.scrollY;
+        const total = document.documentElement.scrollHeight - window.innerHeight;
+
+        nav.classList.toggle('scrolled', scrolled > 50);
+        progress.style.width = (scrolled / total * 100) + '%';
+        backTop.classList.toggle('show', scrolled > 500);
+    });
+
+    // ===== Countdown Timer =====
+    function updateCountdown() {
+        const target = new Date('2026-09-02T09:00:00+03:00').getTime();
+        const now = new Date().getTime();
+        const diff = target - now;
+        if (diff <= 0) {
+            document.getElementById('cd-days').textContent  = '00';
+            document.getElementById('cd-hours').textContent = '00';
+            document.getElementById('cd-mins').textContent  = '00';
+            document.getElementById('cd-secs').textContent  = '00';
+            return;
+        }
+        document.getElementById('cd-days').textContent  = String(Math.floor(diff / 86400000)).padStart(2,'0');
+        document.getElementById('cd-hours').textContent = String(Math.floor((diff % 86400000) / 3600000)).padStart(2,'0');
+        document.getElementById('cd-mins').textContent  = String(Math.floor((diff % 3600000) / 60000)).padStart(2,'0');
+        document.getElementById('cd-secs').textContent  = String(Math.floor((diff % 60000) / 1000)).padStart(2,'0');
+    }
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+
+    // ===== Day Program Tabs =====
+    function showDay(dayId) {
+        document.querySelectorAll('.day-panel').forEach(p => p.classList.add('hidden'));
+        document.querySelectorAll('.day-btn').forEach(b => {
+            b.classList.remove('bg-pangreen','text-white','shadow');
+            b.classList.add('bg-white','border-2','border-pangreen','text-pangreen');
+        });
+        document.getElementById(dayId).classList.remove('hidden');
+        const btn = document.getElementById('daybtn-' + dayId);
+        btn.classList.add('bg-pangreen','text-white','shadow');
+        btn.classList.remove('bg-white','border-2','border-pangreen','text-pangreen');
+    }
+
+    // ===== Agenda Accordion =====
+    function toggleAgenda(el) {
+        el.classList.toggle('open');
+    }
+
+    // ===== FAQ Accordion =====
+    function toggleFaq(el) {
+        const isOpen = el.classList.contains('open');
+        document.querySelectorAll('.faq-item').forEach(f => f.classList.remove('open'));
+        if (!isOpen) el.classList.add('open');
+    }
+
+    // ===== Team Tabs =====
+    function showTab(event, tabId) {
+        document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+        const panel = document.getElementById('tab-' + tabId);
+        if (panel) panel.classList.add('active');
+        event.currentTarget.classList.add('active');
+    }
+
+    // ===== Render Team =====
+    function renderTeam() {
+        if (typeof teamData === 'undefined') return;
+        const container = document.getElementById('panels-container');
+        if (!container) return;
+        let html = '';
+        teamData.forEach((unit, index) => {
+            const isActive = index === 0 ? 'active' : '';
+            const count = unit.members.length;
+            const gridClass = count >= 8 ? 'lg:grid-cols-4' : count >= 5 ? 'lg:grid-cols-3' : count === 4 ? 'lg:grid-cols-4' : 'lg:grid-cols-3';
+            html += `<div id="tab-${unit.id}" class="tab-panel ${isActive} ${unit.unitClass} grid grid-cols-1 sm:grid-cols-2 ${gridClass} gap-5">`;
+            html += `<div class="col-span-full mb-3 text-center">
+                        <p class="text-sm font-bold uppercase tracking-widest text-gray-400">${unit.title}</p>
+                        ${unit.description ? `<p class="text-gray-400 text-sm mt-1 max-w-2xl mx-auto">${unit.description}</p>` : ''}
+                     </div>`;
+            unit.members.forEach(member => {
+                html += `<div class="member-card glass rounded-2xl p-6 text-center border">`;
+                if (member.image) {
+                    html += `<div class="relative group mx-auto w-20 h-20 mb-4 cursor-pointer flex justify-center items-center">
+                                <img src="${member.image}" alt="${member.name}" class="w-20 h-20 rounded-full object-cover border-2 border-pangold/40 shadow-md" loading="lazy">
+                                <div class="opacity-0 invisible group-hover:opacity-100 group-hover:visible absolute z-50 transition-all duration-300 shadow-2xl rounded-xl border-2 border-pangold/40 bg-white p-1 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none w-48 sm:w-56">
+                                    <img src="${member.image}" alt="${member.name}" class="w-full h-auto rounded-lg object-contain">
+                                </div>
+                             </div>`;
+                } else {
+                    html += `<div class="w-20 h-20 rounded-full bg-gray-100 flex items-center justify-center mx-auto mb-4 text-3xl text-gray-300"><i class="fa-solid fa-user"></i></div>`;
+                }
+                html += `<h3 class="font-bold text-lg mb-1">${member.name}</h3>
+                          <span class="role-badge text-sm font-semibold px-3 py-1 rounded-full inline-block">${member.role}</span>
+                        </div>`;
+            });
+            html += `</div>`;
+        });
+        container.innerHTML = html;
+    }
+
+    // ===== Contact Form (Formspree) =====
+    function handleForm(e) {
+        // If Formspree ID is set, let the form submit natively via fetch
+        const form = e.target;
+        const action = form.getAttribute('action');
+        if (action && !action.includes('YOUR_FORM_ID')) {
+            e.preventDefault();
+            fetch(action, {
+                method: 'POST',
+                body: new FormData(form),
+                headers: { 'Accept': 'application/json' }
+            }).then(res => {
+                if (res.ok) {
+                    document.getElementById('form-success').classList.remove('hidden');
+                    form.reset();
+                } else {
+                    alert('Oops! There was a problem sending your message. Please email us directly.');
+                }
+            }).catch(() => alert('Network error. Please email us directly.'));
+        } else {
+            // Placeholder mode — just show success UI
+            e.preventDefault();
+            document.getElementById('form-success').classList.remove('hidden');
+            form.reset();
+        }
+    }
+
+    // ===== Newsletter (Formspree) =====
+    function handleNewsletter(e) {
+        const form = e.target;
+        const action = form.getAttribute('action');
+        if (action && !action.includes('YOUR_NL_FORM_ID')) {
+            e.preventDefault();
+            fetch(action, {
+                method: 'POST',
+                body: new FormData(form),
+                headers: { 'Accept': 'application/json' }
+            }).then(res => {
+                if (res.ok) {
+                    document.getElementById('nl-success').classList.remove('hidden');
+                    document.getElementById('nl-email').value = '';
+                } else {
+                    alert('Subscription failed. Please try again.');
+                }
+            }).catch(() => alert('Network error. Please try again.'));
+        } else {
+            e.preventDefault();
+            document.getElementById('nl-success').classList.remove('hidden');
+            document.getElementById('nl-email').value = '';
+        }
+    }
+
+    // ===== Scroll Reveal =====
+    const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                revealObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+    // ===== Init =====
+    document.addEventListener('DOMContentLoaded', () => {
+        renderTeam();
+        // Re-observe newly added elements after team render
+        document.querySelectorAll('.reveal').forEach(el => {
+            if (!el.classList.contains('visible')) revealObserver.observe(el);
+        });
+    });
+    </script>
+
+</body>
+</html>
+
+
+
